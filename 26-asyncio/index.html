@@ -10,27 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://Dubstepcharts.github.io/python-learn/26-async/basics/">
+        <link rel="canonical" href="https://Dubstepcharts.github.io/python-learn/26-asyncio/">
       
       
+        <link rel="prev" href="../25-pytest/">
+      
+      
+        <link rel="next" href="basics/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.svg">
+      <link rel="icon" href="../assets/images/favicon.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>asyncio: основы - Питон-Планета</title>
+        <title>asyncio — асинхронность - Питон-Планета</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -92,9 +96,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="../.." title="Питон-Планета" class="md-header__button md-logo" aria-label="Питон-Планета" data-md-component="logo">
+    <a href=".." title="Питон-Планета" class="md-header__button md-logo" aria-label="Питон-Планета" data-md-component="logo">
       
-  <img src="../../assets/images/logo.svg" alt="logo">
+  <img src="../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              asyncio: основы
+              asyncio — асинхронность
             
           </span>
         </div>
@@ -218,7 +222,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -239,7 +243,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../00-start/" class="md-tabs__link">
+        <a href="../00-start/" class="md-tabs__link">
           
   
   
@@ -268,7 +272,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../01-basics/" class="md-tabs__link">
+        <a href="../01-basics/" class="md-tabs__link">
           
   
   
@@ -289,6 +293,8 @@
   
   
   
+    
+  
   
     
     
@@ -296,11 +302,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../10-turtle/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../10-turtle/" class="md-tabs__link">
           
   
   
@@ -332,7 +340,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../15-web/" class="md-tabs__link">
+        <a href="../15-web/" class="md-tabs__link">
           
   
   
@@ -364,7 +372,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../36-git/" class="md-tabs__link">
+        <a href="../36-git/" class="md-tabs__link">
           
   
   
@@ -389,7 +397,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../41-errors/" class="md-tabs__link">
+        <a href="../41-errors/" class="md-tabs__link">
           
   
   
@@ -418,7 +426,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../14-projects/" class="md-tabs__link">
+        <a href="../14-projects/" class="md-tabs__link">
           
   
   
@@ -463,9 +471,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Питон-Планета" class="md-nav__button md-logo" aria-label="Питон-Планета" data-md-component="logo">
+    <a href=".." title="Питон-Планета" class="md-nav__button md-logo" aria-label="Питон-Планета" data-md-component="logo">
       
-  <img src="../../assets/images/logo.svg" alt="logo">
+  <img src="../assets/images/logo.svg" alt="logo">
 
     </a>
     Питон-Планета
@@ -492,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -550,7 +558,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../00-start/" class="md-nav__link ">
+            <a href="../00-start/" class="md-nav__link ">
               
   
   
@@ -594,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../00-start/install/" class="md-nav__link">
+      <a href="../00-start/install/" class="md-nav__link">
         
   
   
@@ -622,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../00-start/first-program/" class="md-nav__link">
+      <a href="../00-start/first-program/" class="md-nav__link">
         
   
   
@@ -650,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../00-start/ide/" class="md-nav__link">
+      <a href="../00-start/ide/" class="md-nav__link">
         
   
   
@@ -794,7 +802,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../01-basics/" class="md-nav__link ">
+            <a href="../01-basics/" class="md-nav__link ">
               
   
   
@@ -838,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-basics/variables/" class="md-nav__link">
+      <a href="../01-basics/variables/" class="md-nav__link">
         
   
   
@@ -866,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-basics/data-types/" class="md-nav__link">
+      <a href="../01-basics/data-types/" class="md-nav__link">
         
   
   
@@ -894,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-basics/operators/" class="md-nav__link">
+      <a href="../01-basics/operators/" class="md-nav__link">
         
   
   
@@ -922,7 +930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-basics/input-output/" class="md-nav__link">
+      <a href="../01-basics/input-output/" class="md-nav__link">
         
   
   
@@ -950,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-basics/comments/" class="md-nav__link">
+      <a href="../01-basics/comments/" class="md-nav__link">
         
   
   
@@ -1019,7 +1027,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../02-control-flow/" class="md-nav__link ">
+            <a href="../02-control-flow/" class="md-nav__link ">
               
   
   
@@ -1063,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-control-flow/if-else/" class="md-nav__link">
+      <a href="../02-control-flow/if-else/" class="md-nav__link">
         
   
   
@@ -1091,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-control-flow/while/" class="md-nav__link">
+      <a href="../02-control-flow/while/" class="md-nav__link">
         
   
   
@@ -1119,7 +1127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-control-flow/for/" class="md-nav__link">
+      <a href="../02-control-flow/for/" class="md-nav__link">
         
   
   
@@ -1147,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-control-flow/break-continue/" class="md-nav__link">
+      <a href="../02-control-flow/break-continue/" class="md-nav__link">
         
   
   
@@ -1214,7 +1222,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../03-strings/" class="md-nav__link ">
+            <a href="../03-strings/" class="md-nav__link ">
               
   
   
@@ -1258,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-strings/methods/" class="md-nav__link">
+      <a href="../03-strings/methods/" class="md-nav__link">
         
   
   
@@ -1286,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-strings/formatting/" class="md-nav__link">
+      <a href="../03-strings/formatting/" class="md-nav__link">
         
   
   
@@ -1314,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-strings/slicing/" class="md-nav__link">
+      <a href="../03-strings/slicing/" class="md-nav__link">
         
   
   
@@ -1385,7 +1393,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../04-collections/" class="md-nav__link ">
+            <a href="../04-collections/" class="md-nav__link ">
               
   
   
@@ -1429,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-collections/lists/" class="md-nav__link">
+      <a href="../04-collections/lists/" class="md-nav__link">
         
   
   
@@ -1457,7 +1465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-collections/tuples/" class="md-nav__link">
+      <a href="../04-collections/tuples/" class="md-nav__link">
         
   
   
@@ -1485,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-collections/dicts/" class="md-nav__link">
+      <a href="../04-collections/dicts/" class="md-nav__link">
         
   
   
@@ -1513,7 +1521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-collections/sets/" class="md-nav__link">
+      <a href="../04-collections/sets/" class="md-nav__link">
         
   
   
@@ -1541,7 +1549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-collections/comprehensions/" class="md-nav__link">
+      <a href="../04-collections/comprehensions/" class="md-nav__link">
         
   
   
@@ -1614,7 +1622,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../05-functions/" class="md-nav__link ">
+            <a href="../05-functions/" class="md-nav__link ">
               
   
   
@@ -1658,7 +1666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05-functions/definition/" class="md-nav__link">
+      <a href="../05-functions/definition/" class="md-nav__link">
         
   
   
@@ -1686,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05-functions/arguments/" class="md-nav__link">
+      <a href="../05-functions/arguments/" class="md-nav__link">
         
   
   
@@ -1714,7 +1722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05-functions/return/" class="md-nav__link">
+      <a href="../05-functions/return/" class="md-nav__link">
         
   
   
@@ -1742,7 +1750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05-functions/scope/" class="md-nav__link">
+      <a href="../05-functions/scope/" class="md-nav__link">
         
   
   
@@ -1770,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05-functions/lambda/" class="md-nav__link">
+      <a href="../05-functions/lambda/" class="md-nav__link">
         
   
   
@@ -1798,7 +1806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05-functions/decorators/" class="md-nav__link">
+      <a href="../05-functions/decorators/" class="md-nav__link">
         
   
   
@@ -1863,7 +1871,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../06-files-errors/" class="md-nav__link ">
+            <a href="../06-files-errors/" class="md-nav__link ">
               
   
   
@@ -1907,7 +1915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-files-errors/files/" class="md-nav__link">
+      <a href="../06-files-errors/files/" class="md-nav__link">
         
   
   
@@ -1935,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-files-errors/exceptions/" class="md-nav__link">
+      <a href="../06-files-errors/exceptions/" class="md-nav__link">
         
   
   
@@ -2002,7 +2010,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../07-modules/" class="md-nav__link ">
+            <a href="../07-modules/" class="md-nav__link ">
               
   
   
@@ -2046,7 +2054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../07-modules/import/" class="md-nav__link">
+      <a href="../07-modules/import/" class="md-nav__link">
         
   
   
@@ -2074,7 +2082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../07-modules/custom-modules/" class="md-nav__link">
+      <a href="../07-modules/custom-modules/" class="md-nav__link">
         
   
   
@@ -2102,7 +2110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../07-modules/pip/" class="md-nav__link">
+      <a href="../07-modules/pip/" class="md-nav__link">
         
   
   
@@ -2171,7 +2179,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../08-oop/" class="md-nav__link ">
+            <a href="../08-oop/" class="md-nav__link ">
               
   
   
@@ -2215,7 +2223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-oop/classes/" class="md-nav__link">
+      <a href="../08-oop/classes/" class="md-nav__link">
         
   
   
@@ -2243,7 +2251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-oop/inheritance/" class="md-nav__link">
+      <a href="../08-oop/inheritance/" class="md-nav__link">
         
   
   
@@ -2271,7 +2279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-oop/polymorphism/" class="md-nav__link">
+      <a href="../08-oop/polymorphism/" class="md-nav__link">
         
   
   
@@ -2299,7 +2307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-oop/magic-methods/" class="md-nav__link">
+      <a href="../08-oop/magic-methods/" class="md-nav__link">
         
   
   
@@ -2370,7 +2378,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../09-stdlib/" class="md-nav__link ">
+            <a href="../09-stdlib/" class="md-nav__link ">
               
   
   
@@ -2414,7 +2422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../09-stdlib/builtins/" class="md-nav__link">
+      <a href="../09-stdlib/builtins/" class="md-nav__link">
         
   
   
@@ -2442,7 +2450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../09-stdlib/math-random/" class="md-nav__link">
+      <a href="../09-stdlib/math-random/" class="md-nav__link">
         
   
   
@@ -2470,7 +2478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../09-stdlib/datetime/" class="md-nav__link">
+      <a href="../09-stdlib/datetime/" class="md-nav__link">
         
   
   
@@ -2498,7 +2506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../09-stdlib/os-sys/" class="md-nav__link">
+      <a href="../09-stdlib/os-sys/" class="md-nav__link">
         
   
   
@@ -2526,7 +2534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../09-stdlib/json/" class="md-nav__link">
+      <a href="../09-stdlib/json/" class="md-nav__link">
         
   
   
@@ -2566,8 +2574,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -2597,21 +2607,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -2629,7 +2640,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2669,10 +2680,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -2682,7 +2696,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../10-turtle/" class="md-nav__link ">
+            <a href="../10-turtle/" class="md-nav__link ">
               
   
   
@@ -2700,7 +2714,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2726,7 +2740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../10-turtle/basics/" class="md-nav__link">
+      <a href="../10-turtle/basics/" class="md-nav__link">
         
   
   
@@ -2754,7 +2768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../10-turtle/shapes/" class="md-nav__link">
+      <a href="../10-turtle/shapes/" class="md-nav__link">
         
   
   
@@ -2782,7 +2796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../10-turtle/colors/" class="md-nav__link">
+      <a href="../10-turtle/colors/" class="md-nav__link">
         
   
   
@@ -2810,7 +2824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../10-turtle/loops-in-turtle/" class="md-nav__link">
+      <a href="../10-turtle/loops-in-turtle/" class="md-nav__link">
         
   
   
@@ -2838,7 +2852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../10-turtle/projects/" class="md-nav__link">
+      <a href="../10-turtle/projects/" class="md-nav__link">
         
   
   
@@ -2898,10 +2912,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -2911,7 +2928,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../11-pyqt5/" class="md-nav__link ">
+            <a href="../11-pyqt5/" class="md-nav__link ">
               
   
   
@@ -2929,7 +2946,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2955,7 +2972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../11-pyqt5/install/" class="md-nav__link">
+      <a href="../11-pyqt5/install/" class="md-nav__link">
         
   
   
@@ -2983,7 +3000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../11-pyqt5/first-window/" class="md-nav__link">
+      <a href="../11-pyqt5/first-window/" class="md-nav__link">
         
   
   
@@ -3011,7 +3028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../11-pyqt5/widgets/" class="md-nav__link">
+      <a href="../11-pyqt5/widgets/" class="md-nav__link">
         
   
   
@@ -3039,7 +3056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../11-pyqt5/layouts/" class="md-nav__link">
+      <a href="../11-pyqt5/layouts/" class="md-nav__link">
         
   
   
@@ -3067,7 +3084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../11-pyqt5/signals-slots/" class="md-nav__link">
+      <a href="../11-pyqt5/signals-slots/" class="md-nav__link">
         
   
   
@@ -3095,7 +3112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../11-pyqt5/calculator-project/" class="md-nav__link">
+      <a href="../11-pyqt5/calculator-project/" class="md-nav__link">
         
   
   
@@ -3155,10 +3172,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -3168,7 +3188,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../12-pandas/" class="md-nav__link ">
+            <a href="../12-pandas/" class="md-nav__link ">
               
   
   
@@ -3186,7 +3206,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3212,7 +3232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../12-pandas/install/" class="md-nav__link">
+      <a href="../12-pandas/install/" class="md-nav__link">
         
   
   
@@ -3240,7 +3260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../12-pandas/series-dataframe/" class="md-nav__link">
+      <a href="../12-pandas/series-dataframe/" class="md-nav__link">
         
   
   
@@ -3268,7 +3288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../12-pandas/read-write/" class="md-nav__link">
+      <a href="../12-pandas/read-write/" class="md-nav__link">
         
   
   
@@ -3296,7 +3316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../12-pandas/filtering/" class="md-nav__link">
+      <a href="../12-pandas/filtering/" class="md-nav__link">
         
   
   
@@ -3324,7 +3344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../12-pandas/groupby/" class="md-nav__link">
+      <a href="../12-pandas/groupby/" class="md-nav__link">
         
   
   
@@ -3352,7 +3372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../12-pandas/plots/" class="md-nav__link">
+      <a href="../12-pandas/plots/" class="md-nav__link">
         
   
   
@@ -3410,10 +3430,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -3423,7 +3446,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../13-kivy/" class="md-nav__link ">
+            <a href="../13-kivy/" class="md-nav__link ">
               
   
   
@@ -3441,7 +3464,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3467,7 +3490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../13-kivy/install/" class="md-nav__link">
+      <a href="../13-kivy/install/" class="md-nav__link">
         
   
   
@@ -3495,7 +3518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../13-kivy/first-app/" class="md-nav__link">
+      <a href="../13-kivy/first-app/" class="md-nav__link">
         
   
   
@@ -3523,7 +3546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../13-kivy/widgets/" class="md-nav__link">
+      <a href="../13-kivy/widgets/" class="md-nav__link">
         
   
   
@@ -3551,7 +3574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../13-kivy/kv-language/" class="md-nav__link">
+      <a href="../13-kivy/kv-language/" class="md-nav__link">
         
   
   
@@ -3579,7 +3602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../13-kivy/packaging/" class="md-nav__link">
+      <a href="../13-kivy/packaging/" class="md-nav__link">
         
   
   
@@ -3629,10 +3652,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -3642,7 +3668,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../21-tkinter/" class="md-nav__link ">
+            <a href="../21-tkinter/" class="md-nav__link ">
               
   
   
@@ -3660,7 +3686,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3686,7 +3712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../21-tkinter/widgets/" class="md-nav__link">
+      <a href="../21-tkinter/widgets/" class="md-nav__link">
         
   
   
@@ -3736,10 +3762,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -3749,7 +3778,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../22-pygame/" class="md-nav__link ">
+            <a href="../22-pygame/" class="md-nav__link ">
               
   
   
@@ -3767,7 +3796,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_6" id="__nav_4_6_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3793,7 +3822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../22-pygame/basics/" class="md-nav__link">
+      <a href="../22-pygame/basics/" class="md-nav__link">
         
   
   
@@ -3841,10 +3870,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -3854,7 +3886,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../23-pillow/" class="md-nav__link ">
+            <a href="../23-pillow/" class="md-nav__link ">
               
   
   
@@ -3915,10 +3947,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -3928,7 +3963,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../24-telegram/" class="md-nav__link ">
+            <a href="../24-telegram/" class="md-nav__link ">
               
   
   
@@ -3946,7 +3981,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_8" id="__nav_4_8_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3972,7 +4007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../24-telegram/aiogram/" class="md-nav__link">
+      <a href="../24-telegram/aiogram/" class="md-nav__link">
         
   
   
@@ -4011,6 +4046,8 @@
     
       
         
+          
+        
       
     
     
@@ -4018,10 +4055,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -4030,8 +4070,9 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_9" >
         
           
-          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../25-pytest/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -4045,8 +4086,9 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_9">
@@ -4059,32 +4101,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../25-pytest/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -4099,35 +4115,41 @@
                 
   
   
+    
   
   
+  
     
     
       
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_10" >
+      
+        
+      
+    
+    
+    
+      
+      
         
           
-          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
-            
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
   
   
   <span class="md-ellipsis">
@@ -4141,10 +4163,16 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_4_10" id="__nav_4_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -4156,32 +4184,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../26-asyncio/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -4190,7 +4192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../26-asyncio/basics.md" class="md-nav__link">
+      <a href="basics/" class="md-nav__link">
         
   
   
@@ -4238,10 +4240,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -4251,7 +4256,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../27-utilities/" class="md-nav__link ">
+            <a href="../27-utilities/" class="md-nav__link ">
               
   
   
@@ -4414,7 +4419,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../15-web/" class="md-nav__link ">
+            <a href="../15-web/" class="md-nav__link ">
               
   
   
@@ -4458,7 +4463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../15-web/flask/" class="md-nav__link">
+      <a href="../15-web/flask/" class="md-nav__link">
         
   
   
@@ -4486,7 +4491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../15-web/fastapi/" class="md-nav__link">
+      <a href="../15-web/fastapi/" class="md-nav__link">
         
   
   
@@ -4514,7 +4519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../15-web/django/" class="md-nav__link">
+      <a href="../15-web/django/" class="md-nav__link">
         
   
   
@@ -4581,7 +4586,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../19-requests/" class="md-nav__link ">
+            <a href="../19-requests/" class="md-nav__link ">
               
   
   
@@ -4625,7 +4630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../19-requests/requests/" class="md-nav__link">
+      <a href="../19-requests/requests/" class="md-nav__link">
         
   
   
@@ -4653,7 +4658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../19-requests/beautifulsoup/" class="md-nav__link">
+      <a href="../19-requests/beautifulsoup/" class="md-nav__link">
         
   
   
@@ -4681,7 +4686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../19-requests/selenium/" class="md-nav__link">
+      <a href="../19-requests/selenium/" class="md-nav__link">
         
   
   
@@ -4752,7 +4757,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../20-databases/" class="md-nav__link ">
+            <a href="../20-databases/" class="md-nav__link ">
               
   
   
@@ -4796,7 +4801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../20-databases/sql-basics/" class="md-nav__link">
+      <a href="../20-databases/sql-basics/" class="md-nav__link">
         
   
   
@@ -4824,7 +4829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../20-databases/sqlite/" class="md-nav__link">
+      <a href="../20-databases/sqlite/" class="md-nav__link">
         
   
   
@@ -4852,7 +4857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../20-databases/sqlalchemy/" class="md-nav__link">
+      <a href="../20-databases/sqlalchemy/" class="md-nav__link">
         
   
   
@@ -4880,7 +4885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../20-databases/postgresql/" class="md-nav__link">
+      <a href="../20-databases/postgresql/" class="md-nav__link">
         
   
   
@@ -4908,7 +4913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../20-databases/mongodb/" class="md-nav__link">
+      <a href="../20-databases/mongodb/" class="md-nav__link">
         
   
   
@@ -5035,7 +5040,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../16-numpy/" class="md-nav__link ">
+            <a href="../16-numpy/" class="md-nav__link ">
               
   
   
@@ -5079,7 +5084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../16-numpy/basics/" class="md-nav__link">
+      <a href="../16-numpy/basics/" class="md-nav__link">
         
   
   
@@ -5107,7 +5112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../16-numpy/operations/" class="md-nav__link">
+      <a href="../16-numpy/operations/" class="md-nav__link">
         
   
   
@@ -5174,7 +5179,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../17-matplotlib/" class="md-nav__link ">
+            <a href="../17-matplotlib/" class="md-nav__link ">
               
   
   
@@ -5218,7 +5223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-matplotlib/basics/" class="md-nav__link">
+      <a href="../17-matplotlib/basics/" class="md-nav__link">
         
   
   
@@ -5246,7 +5251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-matplotlib/charts/" class="md-nav__link">
+      <a href="../17-matplotlib/charts/" class="md-nav__link">
         
   
   
@@ -5274,7 +5279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-matplotlib/seaborn/" class="md-nav__link">
+      <a href="../17-matplotlib/seaborn/" class="md-nav__link">
         
   
   
@@ -5339,7 +5344,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../18-sklearn/" class="md-nav__link ">
+            <a href="../18-sklearn/" class="md-nav__link ">
               
   
   
@@ -5383,7 +5388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../18-sklearn/basics/" class="md-nav__link">
+      <a href="../18-sklearn/basics/" class="md-nav__link">
         
   
   
@@ -5411,7 +5416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../18-sklearn/algorithms/" class="md-nav__link">
+      <a href="../18-sklearn/algorithms/" class="md-nav__link">
         
   
   
@@ -5486,7 +5491,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../28-algorithms/" class="md-nav__link ">
+            <a href="../28-algorithms/" class="md-nav__link ">
               
   
   
@@ -5530,7 +5535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../28-algorithms/complexity/" class="md-nav__link">
+      <a href="../28-algorithms/complexity/" class="md-nav__link">
         
   
   
@@ -5558,7 +5563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../28-algorithms/sorting-searching/" class="md-nav__link">
+      <a href="../28-algorithms/sorting-searching/" class="md-nav__link">
         
   
   
@@ -5586,7 +5591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../28-algorithms/data-structures/" class="md-nav__link">
+      <a href="../28-algorithms/data-structures/" class="md-nav__link">
         
   
   
@@ -5653,7 +5658,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../29-ml-advanced/" class="md-nav__link ">
+            <a href="../29-ml-advanced/" class="md-nav__link ">
               
   
   
@@ -5697,7 +5702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../29-ml-advanced/neural-networks/" class="md-nav__link">
+      <a href="../29-ml-advanced/neural-networks/" class="md-nav__link">
         
   
   
@@ -5725,7 +5730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../29-ml-advanced/pytorch/" class="md-nav__link">
+      <a href="../29-ml-advanced/pytorch/" class="md-nav__link">
         
   
   
@@ -5753,7 +5758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../29-ml-advanced/tensorflow/" class="md-nav__link">
+      <a href="../29-ml-advanced/tensorflow/" class="md-nav__link">
         
   
   
@@ -5818,7 +5823,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../30-scraping-pro/" class="md-nav__link ">
+            <a href="../30-scraping-pro/" class="md-nav__link ">
               
   
   
@@ -5862,7 +5867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30-scraping-pro/ethics/" class="md-nav__link">
+      <a href="../30-scraping-pro/ethics/" class="md-nav__link">
         
   
   
@@ -5890,7 +5895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../30-scraping-pro/production/" class="md-nav__link">
+      <a href="../30-scraping-pro/production/" class="md-nav__link">
         
   
   
@@ -5957,7 +5962,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../31-devops/" class="md-nav__link ">
+            <a href="../31-devops/" class="md-nav__link ">
               
   
   
@@ -6001,7 +6006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../31-devops/docker/" class="md-nav__link">
+      <a href="../31-devops/docker/" class="md-nav__link">
         
   
   
@@ -6029,7 +6034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../31-devops/github-actions/" class="md-nav__link">
+      <a href="../31-devops/github-actions/" class="md-nav__link">
         
   
   
@@ -6057,7 +6062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../31-devops/deploy/" class="md-nav__link">
+      <a href="../31-devops/deploy/" class="md-nav__link">
         
   
   
@@ -6120,7 +6125,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../32-gamedev/" class="md-nav__link ">
+            <a href="../32-gamedev/" class="md-nav__link ">
               
   
   
@@ -6164,7 +6169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../32-gamedev/engines/" class="md-nav__link">
+      <a href="../32-gamedev/engines/" class="md-nav__link">
         
   
   
@@ -6227,7 +6232,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../33-etl/" class="md-nav__link ">
+            <a href="../33-etl/" class="md-nav__link ">
               
   
   
@@ -6271,7 +6276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../33-etl/pipelines/" class="md-nav__link">
+      <a href="../33-etl/pipelines/" class="md-nav__link">
         
   
   
@@ -6336,7 +6341,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../34-security/" class="md-nav__link ">
+            <a href="../34-security/" class="md-nav__link ">
               
   
   
@@ -6380,7 +6385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../34-security/crypto/" class="md-nav__link">
+      <a href="../34-security/crypto/" class="md-nav__link">
         
   
   
@@ -6408,7 +6413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../34-security/secure-coding/" class="md-nav__link">
+      <a href="../34-security/secure-coding/" class="md-nav__link">
         
   
   
@@ -6550,7 +6555,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../36-git/" class="md-nav__link ">
+            <a href="../36-git/" class="md-nav__link ">
               
   
   
@@ -6594,7 +6599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../36-git/basics/" class="md-nav__link">
+      <a href="../36-git/basics/" class="md-nav__link">
         
   
   
@@ -6622,7 +6627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../36-git/branches/" class="md-nav__link">
+      <a href="../36-git/branches/" class="md-nav__link">
         
   
   
@@ -6650,7 +6655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../36-git/github/" class="md-nav__link">
+      <a href="../36-git/github/" class="md-nav__link">
         
   
   
@@ -6678,7 +6683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../36-git/advanced/" class="md-nav__link">
+      <a href="../36-git/advanced/" class="md-nav__link">
         
   
   
@@ -6743,7 +6748,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../37-linux/" class="md-nav__link ">
+            <a href="../37-linux/" class="md-nav__link ">
               
   
   
@@ -6787,7 +6792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../37-linux/terminal/" class="md-nav__link">
+      <a href="../37-linux/terminal/" class="md-nav__link">
         
   
   
@@ -6815,7 +6820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../37-linux/practice/" class="md-nav__link">
+      <a href="../37-linux/practice/" class="md-nav__link">
         
   
   
@@ -6880,7 +6885,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../38-exams/" class="md-nav__link ">
+            <a href="../38-exams/" class="md-nav__link ">
               
   
   
@@ -6924,7 +6929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../38-exams/ege/" class="md-nav__link">
+      <a href="../38-exams/ege/" class="md-nav__link">
         
   
   
@@ -6952,7 +6957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../38-exams/olympiads/" class="md-nav__link">
+      <a href="../38-exams/olympiads/" class="md-nav__link">
         
   
   
@@ -7017,7 +7022,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../39-career/" class="md-nav__link ">
+            <a href="../39-career/" class="md-nav__link ">
               
   
   
@@ -7061,7 +7066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../39-career/roles/" class="md-nav__link">
+      <a href="../39-career/roles/" class="md-nav__link">
         
   
   
@@ -7089,7 +7094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../39-career/interviews/" class="md-nav__link">
+      <a href="../39-career/interviews/" class="md-nav__link">
         
   
   
@@ -7150,7 +7155,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../40-whats-next/" class="md-nav__link ">
+            <a href="../40-whats-next/" class="md-nav__link ">
               
   
   
@@ -7239,7 +7244,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../41-errors/" class="md-nav__link ">
+            <a href="../41-errors/" class="md-nav__link ">
               
   
   
@@ -7283,7 +7288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../41-errors/syntax/" class="md-nav__link">
+      <a href="../41-errors/syntax/" class="md-nav__link">
         
   
   
@@ -7311,7 +7316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../41-errors/runtime/" class="md-nav__link">
+      <a href="../41-errors/runtime/" class="md-nav__link">
         
   
   
@@ -7339,7 +7344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../41-errors/import/" class="md-nav__link">
+      <a href="../41-errors/import/" class="md-nav__link">
         
   
   
@@ -7367,7 +7372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../41-errors/environment/" class="md-nav__link">
+      <a href="../41-errors/environment/" class="md-nav__link">
         
   
   
@@ -7395,7 +7400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../41-errors/git-mkdocs/" class="md-nav__link">
+      <a href="../41-errors/git-mkdocs/" class="md-nav__link">
         
   
   
@@ -7521,7 +7526,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../14-projects/" class="md-nav__link ">
+            <a href="../14-projects/" class="md-nav__link ">
               
   
   
@@ -7565,7 +7570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../14-projects/beginner/" class="md-nav__link">
+      <a href="../14-projects/beginner/" class="md-nav__link">
         
   
   
@@ -7593,7 +7598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../14-projects/intermediate/" class="md-nav__link">
+      <a href="../14-projects/intermediate/" class="md-nav__link">
         
   
   
@@ -7621,7 +7626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../14-projects/advanced/" class="md-nav__link">
+      <a href="../14-projects/advanced/" class="md-nav__link">
         
   
   
@@ -7688,7 +7693,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../35-step-projects/" class="md-nav__link ">
+            <a href="../35-step-projects/" class="md-nav__link ">
               
   
   
@@ -7732,7 +7737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../35-step-projects/telegram-quiz/" class="md-nav__link">
+      <a href="../35-step-projects/telegram-quiz/" class="md-nav__link">
         
   
   
@@ -7760,7 +7765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../35-step-projects/weather-cli/" class="md-nav__link">
+      <a href="../35-step-projects/weather-cli/" class="md-nav__link">
         
   
   
@@ -7788,7 +7793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../35-step-projects/flask-diary/" class="md-nav__link">
+      <a href="../35-step-projects/flask-diary/" class="md-nav__link">
         
   
   
@@ -7854,7 +7859,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📖 Основные понятия
+        📚 Что в разделе
       
     </span>
   </a>
@@ -7865,7 +7870,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✍️ Простая корутина
+        🍎 Объясняем просто
       
     </span>
   </a>
@@ -7873,156 +7878,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📌 Одна задача vs несколько
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Одна задача vs несколько">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Последовательно (медленно)
+        📌 Где это нужно
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Асинхронно параллельно (быстро)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create_task" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📌 create_task — запустить «в фоне»
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gather" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📌 gather — ждать все
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wait_for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📌 wait_for — таймаут
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#asyncioqueue" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📌 Очередь asyncio.Queue
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📌 Примитивы синхронизации
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#aiohttp-http-" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📌 aiohttp — HTTP-запросы
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#as_completed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📌 as_completed
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        💡 Пример — асинхронный парсер
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚠️ Частые ошибки
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧪 Упражнения
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 Что дальше
@@ -8052,295 +7919,52 @@
   
 
 
-<h1 id="asyncio">asyncio: основы<a class="headerlink" href="#asyncio" title="Permanent link">&para;</a></h1>
-<div class="admonition abstract">
-<p class="admonition-title">Уровень: ⭐⭐⭐</p>
-<p>Нужно знать: <a href="../../05-functions/">функции</a>, <a href="../../04-collections/comprehensions/">генераторы</a>.</p>
+<h1 id="asyncio">asyncio — асинхронность<a class="headerlink" href="#asyncio" title="Permanent link">&para;</a></h1>
+<p><strong>asyncio</strong> — стандартная библиотека для <strong>асинхронного</strong> программирования. Позволяет выполнять несколько задач «одновременно», не создавая новых потоков.</p>
+<p>Это то, что делает современные боты, веб-API, парсеры быстрыми — они не ждут, пока одна операция завершится, а переключаются на другую.</p>
+<div class="admonition tip">
+<p class="admonition-title">Кому подходит</p>
+<p><strong>10–11 класс</strong>. Нужны: функции, генераторы, <code>async</code> в общих чертах.</p>
 </div>
 <hr />
-<h2 id="_1">📖 Основные понятия<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">📚 Что в разделе<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Термин</th>
-<th>Значит</th>
+<th>Страница</th>
+<th>Что узнаете</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Coroutine</strong></td>
-<td>Функция <code>async def</code> — «может подождать»</td>
-</tr>
-<tr>
-<td><strong>await</strong></td>
-<td>«Отдай управление другим задачам, пока я жду»</td>
-</tr>
-<tr>
-<td><strong>Event loop</strong></td>
-<td>«Диспетчер» — решает, кто сейчас работает</td>
-</tr>
-<tr>
-<td><strong>Task</strong></td>
-<td>Запущенная корутина</td>
-</tr>
-<tr>
-<td><strong>Future</strong></td>
-<td>Результат, который появится позже</td>
+<td><a href="basics/">Основы</a></td>
+<td><code>async</code>, <code>await</code>, <code>create_task</code>, <code>gather</code>, очереди, примитивы</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="_2">✍️ Простая корутина<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">hello</span><span class="p">():</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Начало"</span><span class="p">)</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>         <span class="c1"># «Жди 1 секунду, но не блокируй других»</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Конец"</span><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">hello</span><span class="p">())</span>
-</code></pre></div>
-<p><strong><code>asyncio.run(...)</code></strong> — точка входа. Создаёт event loop, выполняет корутину,
-закрывает.</p>
-<p><strong><code>await asyncio.sleep(1)</code></strong> — асинхронная пауза. В отличие от <code>time.sleep(1)</code>
-<strong>не блокирует</strong> цикл — другие задачи продолжают работать.</p>
-<hr />
-<h2 id="vs">📌 Одна задача vs несколько<a class="headerlink" href="#vs" title="Permanent link">&para;</a></h2>
-<h3 id="_3">Последовательно (медленно)<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">sync_task</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="mi">2</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">results</span> <span class="o">=</span> <span class="p">[</span><span class="n">sync_task</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> сек"</span><span class="p">)</span>   <span class="c1"># ~3.0 сек</span>
-</code></pre></div>
-<h3 id="_4">Асинхронно параллельно (быстро)<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">async_task</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="mi">2</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">start</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        <span class="n">async_task</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">async_task</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">async_task</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="p">)</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> сек"</span><span class="p">)</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>     <span class="c1"># ~1.0 сек — в 3 раза быстрее!</span>
-</code></pre></div>
-<hr />
-<h2 id="create_task">📌 <code>create_task</code> — запустить «в фоне»<a class="headerlink" href="#create_task" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">worker</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">delay</span><span class="p">):</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: старт"</span><span class="p">)</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">delay</span><span class="p">)</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: готово"</span><span class="p">)</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">task1</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">worker</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">task2</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">worker</span><span class="p">(</span><span class="s2">"B"</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="k">await</span> <span class="n">task1</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="k">await</span> <span class="n">task2</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
-</code></pre></div>
-<p>Обе задачи стартуют <strong>сразу</strong>. <code>await</code> ждёт завершения.</p>
-<hr />
-<h2 id="gather">📌 <code>gather</code> — ждать все<a class="headerlink" href="#gather" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="n">worker</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="n">worker</span><span class="p">(</span><span class="s2">"B"</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="n">worker</span><span class="p">(</span><span class="s2">"C"</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">)</span>
-</code></pre></div>
-<p>Возвращает <strong>список результатов</strong> в порядке передачи. Если одна упадёт —
-по умолчанию отменит остальные (можно <code>return_exceptions=True</code>).</p>
-<hr />
-<h2 id="wait_for">📌 <code>wait_for</code> — таймаут<a class="headerlink" href="#wait_for" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">wait_for</span><span class="p">(</span><span class="n">some_task</span><span class="p">(),</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">TimeoutError</span><span class="p">:</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Превышено время"</span><span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="asyncioqueue">📌 Очередь <code>asyncio.Queue</code><a class="headerlink" href="#asyncioqueue" title="Permanent link">&para;</a></h2>
-<p>Паттерн «производитель — потребитель»:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">producer</span><span class="p">(</span><span class="n">queue</span><span class="p">):</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>        <span class="k">await</span> <span class="n">queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Создано: </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="k">await</span> <span class="n">queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>         <span class="c1"># сигнал «хватит»</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">consumer</span><span class="p">(</span><span class="n">queue</span><span class="p">):</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>        <span class="n">item</span> <span class="o">=</span> <span class="k">await</span> <span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>        <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>            <span class="k">break</span>
-<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Обработано: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>
-<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>    <span class="n">queue</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
-<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>    <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="n">producer</span><span class="p">(</span><span class="n">queue</span><span class="p">),</span> <span class="n">consumer</span><span class="p">(</span><span class="n">queue</span><span class="p">))</span>
-<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>
-<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
-</code></pre></div>
-<hr />
-<h2 id="_5">📌 Примитивы синхронизации<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Примитив</th>
-<th>Для чего</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Lock</code></td>
-<td>Взаимное исключение</td>
-</tr>
-<tr>
-<td><code>Semaphore</code></td>
-<td>Ограничить число одновременных</td>
-</tr>
-<tr>
-<td><code>Event</code></td>
-<td>Ожидание сигнала</td>
-</tr>
-<tr>
-<td><code>Condition</code></td>
-<td>Ожидание условия</td>
-</tr>
-<tr>
-<td><code>Barrier</code></td>
-<td>Ждать N задач</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Пример — семафор, ограничивающий одновременные запросы:</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">sem</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Semaphore</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>      <span class="c1"># не более 5 одновременно</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">fetch</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="k">async</span> <span class="k">with</span> <span class="n">sem</span><span class="p">:</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        <span class="k">async</span> <span class="k">with</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientSession</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>            <span class="k">async</span> <span class="k">with</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="k">as</span> <span class="n">r</span><span class="p">:</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>                <span class="k">return</span> <span class="k">await</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
-</code></pre></div>
-<hr />
-<h2 id="aiohttp-http-">📌 <code>aiohttp</code> — HTTP-запросы<a class="headerlink" href="#aiohttp-http-" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>install<span class="w"> </span>aiohttp
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">aiohttp</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">fetch</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="k">async</span> <span class="k">with</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="k">as</span> <span class="n">r</span><span class="p">:</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        <span class="k">return</span> <span class="k">await</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    <span class="n">urls</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"https://example.com/?p=</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">)]</span>
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    <span class="k">async</span> <span class="k">with</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientSession</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        <span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="n">fetch</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span> <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">]</span>
-<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>        <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">tasks</span><span class="p">)</span>
-<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
-<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Получено </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span><span class="si">}</span><span class="s2"> ответов"</span><span class="p">)</span>
-<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>
-<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
-</code></pre></div>
-<p>20 запросов параллельно — <strong>в 20 раз быстрее</strong>, чем последовательно.</p>
-<hr />
-<h2 id="as_completed">📌 <code>as_completed</code><a class="headerlink" href="#as_completed" title="Permanent link">&para;</a></h2>
-<p>Обрабатывать результаты <strong>по мере готовности</strong>, а не в порядке запуска:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">asyncio</span><span class="w"> </span><span class="kn">import</span> <span class="n">as_completed</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">for</span> <span class="n">coro</span> <span class="ow">in</span> <span class="n">as_completed</span><span class="p">([</span><span class="n">task1</span><span class="p">,</span> <span class="n">task2</span><span class="p">,</span> <span class="n">task3</span><span class="p">]):</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">coro</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="_6">💡 Пример — асинхронный парсер<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">aiohttp</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">fetch_status</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>        <span class="k">async</span> <span class="k">with</span> <span class="n">session</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> <span class="k">as</span> <span class="n">r</span><span class="p">:</span>
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>            <span class="k">return</span> <span class="n">url</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">status</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>        <span class="k">return</span> <span class="n">url</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"ошибка: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span>
-<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>
-<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>    <span class="n">urls</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>        <span class="s2">"https://example.com"</span><span class="p">,</span>
-<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>        <span class="s2">"https://python.org"</span><span class="p">,</span>
-<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>        <span class="s2">"https://github.com"</span><span class="p">,</span>
-<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>        <span class="s2">"https://ya.ru"</span><span class="p">,</span>
-<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>        <span class="s2">"https://stackoverflow.com"</span><span class="p">,</span>
-<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>    <span class="p">]</span>
-<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>
-<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>    <span class="k">async</span> <span class="k">with</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientSession</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
-<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>        <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">fetch_status</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span> <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">])</span>
-<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>
-<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>    <span class="k">for</span> <span class="n">url</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
-<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">url</span><span class="si">:</span><span class="s2">35</span><span class="si">}</span><span class="s2"> → </span><span class="si">{</span><span class="n">status</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>
-<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
-</code></pre></div>
-<hr />
-<h2 id="_7">⚠️ Частые ошибки<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Блокирующий код в <code>async def</code></p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">():</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>          <span class="c1"># ❌ блокирует весь event loop</span>
-</code></pre></div>
-<strong>Правильно:</strong> <code>await asyncio.sleep(5)</code>. Для синхронных операций —
-<code>await asyncio.to_thread(sync_func)</code>.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Забыли <code>await</code></p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">result</span> <span class="o">=</span> <span class="n">some_coro</span><span class="p">()</span>        <span class="c1"># ❌ result — корутина, а не результат</span>
-</code></pre></div>
-Всегда <code>await</code>.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title"><code>async def</code> вне <code>asyncio.run</code></p>
-<p>Корутину нужно запустить через <code>asyncio.run(main())</code> или
-<code>create_task</code>.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Слишком много параллельно</p>
-<p>Парсинг 10 000 сайтов разом — вас забанит. Используйте <code>Semaphore(20)</code>.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title"><code>requests</code> в асинхронном коде</p>
-<p><code>requests</code> — синхронный, заблокирует цикл. Используйте <code>aiohttp</code>
-или <code>httpx</code>.</p>
+<h2 id="_2">🍎 Объясняем просто<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Официант в кафе</p>
+<p><strong>Синхронный код</strong> — один официант: принял заказ → пошёл на кухню →
+ждёт → принёс → пошёл к следующему. Клиенты ждут.</p>
+<p><strong>Асинхронный код</strong> — официант принял заказ, пока повар готовит — пошёл
+к другому столику. Все довольны, все быстро.</p>
+<p><code>await</code> — это «я жду, но ты, event loop, займись пока другими делами».</p>
 </div>
 <hr />
-<h2 id="_8">🧪 Упражнения<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<ol>
-<li>⭐ <code>async def hello()</code> с <code>await asyncio.sleep(1)</code>.</li>
-<li>⭐ Три задачи через <code>create_task</code>.</li>
-<li>⭐⭐ Сравнить время sync и async.</li>
-<li>⭐⭐ Таймаут через <code>wait_for</code>.</li>
-<li>⭐⭐ Очередь: производитель + потребитель.</li>
-<li>⭐⭐⭐ Асинхронный загрузчик 10 URL через <code>aiohttp</code>.</li>
-<li>⭐⭐⭐ Семафор: не более 5 одновременных запросов.</li>
-</ol>
+<h2 id="_3">📌 Где это нужно<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Телеграм-боты</strong> (aiogram)</li>
+<li><strong>Веб-API</strong> (FastAPI, aiohttp)</li>
+<li><strong>Парсинг</strong> десятков сайтов одновременно</li>
+<li><strong>Чат-серверы</strong>, WebSocket</li>
+<li><strong>Работа с БД</strong> (asyncpg, motor)</li>
+</ul>
+<p>Для обычных скриптов (обработка файлов, вычисления) asyncio не обязателен.</p>
 <hr />
-<h2 id="_9">🔗 Что дальше<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<p>→ <a href="../../27-utilities/">Утилиты</a>.</p>
+<h2 id="_4">🔗 Что дальше<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>→ <a href="basics/">Основы</a>.</p>
 
 
 
@@ -8395,6 +8019,44 @@
         <footer class="md-footer">
   
     
+      
+      <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
+        
+          
+          <a href="../25-pytest/" class="md-footer__link md-footer__link--prev" aria-label="Назад: pytest — тестирование">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              <div class="md-ellipsis">
+                pytest — тестирование
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="basics/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Основы">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              <div class="md-ellipsis">
+                Основы
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -8446,12 +8108,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.footer", "navigation.tracking", "header.autohide"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.footer", "navigation.tracking", "header.autohide"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../../javascripts/progress.js"></script>
+        <script src="../javascripts/progress.js"></script>
       
     
   </body>

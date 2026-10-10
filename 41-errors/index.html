@@ -4017,6 +4017,8 @@
     
       
         
+          
+        
       
     
     
@@ -4036,8 +4038,9 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_9" >
         
           
-          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../25-pytest/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -4051,8 +4054,9 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_9">
@@ -4065,32 +4069,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../25-pytest/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -4110,6 +4088,8 @@
     
     
       
+        
+          
         
       
         
@@ -4132,8 +4112,9 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_10" >
         
           
-          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../26-asyncio/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -4147,8 +4128,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_10">
@@ -4162,32 +4149,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../26-asyncio/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -4196,7 +4157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../26-asyncio/basics.md" class="md-nav__link">
+      <a href="../26-asyncio/basics/" class="md-nav__link">
         
   
   
@@ -8014,7 +7975,7 @@
 <ol>
 <li><strong>Прочитайте последнюю строку</strong> — там тип ошибки.</li>
 <li><strong>Найдите строку в вашем коде</strong>, где она возникла (номер и имя файла указаны).</li>
-<li><strong>Найдите свою ошибку в таблице ниже</strong> — кликните на неё.</li>
+<li><strong>Откройте нужную категорию</strong> ниже — и найдите свою ошибку через <code>Ctrl + F</code>.</li>
 <li>Если не нашли — Google. Почти все ошибки уже кем-то решены.</li>
 </ol>
 </div>
@@ -8027,7 +7988,7 @@
 <th>№</th>
 <th>Ошибка</th>
 <th>Что случилось</th>
-<th>Разбор</th>
+<th>Категория</th>
 </tr>
 </thead>
 <tbody>
@@ -8035,477 +7996,196 @@
 <td>1</td>
 <td><code>SyntaxError: invalid syntax</code></td>
 <td>Опечатка в коде: скобка, кавычка, <code>:</code></td>
-<td><a href="syntax/#syntaxerror-invalid-syntax">→</a></td>
+<td><a href="syntax/">Синтаксис</a></td>
 </tr>
 <tr>
 <td>2</td>
 <td><code>IndentationError: expected an indented block</code></td>
 <td>Забыли отступ после <code>if</code>/<code>for</code>/<code>def</code></td>
-<td><a href="syntax/#indentationerror-expected-an-indented-block">→</a></td>
+<td><a href="syntax/">Синтаксис</a></td>
 </tr>
 <tr>
 <td>3</td>
 <td><code>NameError: name 'x' is not defined</code></td>
 <td>Переменная не создана или опечатка</td>
-<td><a href="runtime/#nameerror-name-x-is-not-defined">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>4</td>
 <td><code>ValueError: invalid literal for int() with base 10</code></td>
 <td><code>int("привет")</code> — не число</td>
-<td><a href="runtime/#valueerror-invalid-literal-for-int-with-base-10-привет">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>5</td>
 <td><code>ModuleNotFoundError: No module named 'X'</code></td>
 <td>Библиотека не установлена</td>
-<td><a href="import/#modulenotfounderror-no-module-named-requests">→</a></td>
+<td><a href="import/">Импорт</a></td>
 </tr>
 <tr>
 <td>6</td>
 <td><code>TypeError: unsupported operand type(s) for +</code></td>
 <td>Складываете строку и число</td>
-<td><a href="runtime/#typeerror-unsupported-operand-types-for--int-and-str">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>7</td>
 <td><code>FileNotFoundError: [Errno 2] No such file</code></td>
 <td>Python не нашёл файл</td>
-<td><a href="import/#filenotfounderror-errno-2-no-such-file-or-directory-datacsv">→</a></td>
+<td><a href="import/">Импорт</a></td>
 </tr>
 <tr>
 <td>8</td>
 <td><code>'python' is not recognized</code></td>
 <td>Python не установлен или не в PATH</td>
-<td><a href="environment/#python-is-not-recognized-as-an-internal-or-external-command-windows">→</a></td>
+<td><a href="environment/">Окружение</a></td>
 </tr>
 <tr>
 <td>9</td>
 <td><code>IndentationError: unexpected indent</code></td>
 <td>Лишний отступ</td>
-<td><a href="syntax/#indentationerror-unexpected-indent">→</a></td>
+<td><a href="syntax/">Синтаксис</a></td>
 </tr>
 <tr>
 <td>10</td>
 <td><code>IndexError: list index out of range</code></td>
 <td>Индекс за пределами списка</td>
-<td><a href="runtime/#indexerror-list-index-out-of-range">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>11</td>
 <td><code>AttributeError: 'NoneType' object has no attribute</code></td>
 <td>Функция не вернула значение</td>
-<td><a href="runtime/#attributeerror-nonetype-object-has-no-attribute-x">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>12</td>
 <td><code>KeyError: 'name'</code></td>
 <td>Ключа нет в словаре</td>
-<td><a href="runtime/#keyerror-name">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>13</td>
 <td><code>ZeroDivisionError: division by zero</code></td>
 <td>Деление на ноль</td>
-<td><a href="runtime/#zerodivisionerror-division-by-zero">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>14</td>
 <td><code>NameError: name 'привет' is not defined</code></td>
 <td>Забыли кавычки у строки</td>
-<td><a href="runtime/#nameerror-name-привет-is-not-defined">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>15</td>
 <td><code>AttributeError: 'str' object has no attribute</code></td>
 <td>У строки нет такого метода</td>
-<td><a href="runtime/#attributeerror-str-object-has-no-attribute-append">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>16</td>
 <td><code>'pip' is not recognized</code></td>
 <td>pip не в PATH</td>
-<td><a href="environment/#pip-command-not-found">→</a></td>
+<td><a href="environment/">Окружение</a></td>
 </tr>
 <tr>
 <td>17</td>
 <td><code>UnboundLocalError: local variable referenced before assignment</code></td>
 <td>Переменная не создана до чтения</td>
-<td><a href="runtime/#unboundlocalerror-local-variable-x-referenced-before-assignment">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>18</td>
 <td><code>IndentationError: unindent does not match</code></td>
 <td>Смешали табы и пробелы</td>
-<td><a href="syntax/#indentationerror-unindent-does-not-match">→</a></td>
+<td><a href="syntax/">Синтаксис</a></td>
 </tr>
 <tr>
 <td>19</td>
 <td><code>TypeError: 'int' object is not callable</code></td>
 <td>Переопределили встроенную функцию</td>
-<td><a href="runtime/#typeerror-int-object-is-not-callable">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>20</td>
 <td><code>Config file 'mkdocs.yml' does not exist</code></td>
 <td>Не в той папке запустили mkdocs</td>
-<td><a href="git-mkdocs/#config-file-mkdocsyml-does-not-exist">→</a></td>
+<td><a href="git-mkdocs/">Git и MkDocs</a></td>
 </tr>
 <tr>
 <td>21</td>
 <td><code>Permission denied</code> (pip)</td>
 <td>Нет прав / нужен venv</td>
-<td><a href="environment/#permission-denied-при-pip-install-linuxmacos">→</a></td>
+<td><a href="environment/">Окружение</a></td>
 </tr>
 <tr>
 <td>22</td>
 <td><code>SyntaxError: invalid character '«' (U+00AB)</code></td>
 <td>Русские кавычки вместо <code>"</code></td>
-<td><a href="syntax/#syntaxerror-invalid-character--u00ab">→</a></td>
+<td><a href="syntax/">Синтаксис</a></td>
 </tr>
 <tr>
 <td>23</td>
 <td><code>SyntaxError: 'return' outside function</code></td>
 <td><code>return</code> вне функции</td>
-<td><a href="syntax/#syntaxerror-return-outside-function">→</a></td>
+<td><a href="syntax/">Синтаксис</a></td>
 </tr>
 <tr>
 <td>24</td>
 <td><code>SyntaxError: 'break' outside loop</code></td>
 <td><code>break</code> вне цикла</td>
-<td><a href="syntax/#syntaxerror-break-outside-loop">→</a></td>
+<td><a href="syntax/">Синтаксис</a></td>
 </tr>
 <tr>
 <td>25</td>
 <td><code>fatal: not a git repository</code></td>
 <td>Нет репозитория в текущей папке</td>
-<td><a href="git-mkdocs/#fatal-not-a-git-repository">→</a></td>
+<td><a href="git-mkdocs/">Git и MkDocs</a></td>
 </tr>
 <tr>
 <td>26</td>
 <td><code>Author identity unknown</code></td>
 <td>Git не знает, кто вы</td>
-<td><a href="git-mkdocs/#author-identity-unknown-please-tell-me-who-you-are">→</a></td>
+<td><a href="git-mkdocs/">Git и MkDocs</a></td>
 </tr>
 <tr>
 <td>27</td>
 <td><code>RecursionError: maximum recursion depth exceeded</code></td>
 <td>Рекурсия без остановки</td>
-<td><a href="runtime/#recursionerror-maximum-recursion-depth-exceeded">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>28</td>
 <td><code>error: failed to push some refs</code></td>
 <td>На GitHub есть чужие коммиты</td>
-<td><a href="git-mkdocs/#error-failed-to-push-some-refs-to-">→</a></td>
+<td><a href="git-mkdocs/">Git и MkDocs</a></td>
 </tr>
 <tr>
 <td>29</td>
 <td><code>UnicodeDecodeError: 'utf-8' codec can't decode</code></td>
 <td>Файл не в UTF-8</td>
-<td><a href="runtime/#unicodedecodeerror-utf-8-codec-cant-decode-byte-">→</a></td>
+<td><a href="runtime/">Runtime</a></td>
 </tr>
 <tr>
 <td>30</td>
 <td><code>ImportError: Bad git executable</code></td>
 <td>Нет Git для плагина MkDocs</td>
-<td><a href="git-mkdocs/#importerror-bad-git-executable">→</a></td>
+<td><a href="git-mkdocs/">Git и MkDocs</a></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="_2">📂 Все ошибки по категориям<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="python">🔤 Синтаксис — Python не может прочитать код<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Ошибка</th>
-<th>Разбор</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>SyntaxError: invalid syntax</code></td>
-<td><a href="syntax/#syntaxerror-invalid-syntax">→</a></td>
-</tr>
-<tr>
-<td><code>SyntaxError: invalid character '«'</code></td>
-<td><a href="syntax/#syntaxerror-invalid-character--u00ab">→</a></td>
-</tr>
-<tr>
-<td><code>SyntaxError: 'return' outside function</code></td>
-<td><a href="syntax/#syntaxerror-return-outside-function">→</a></td>
-</tr>
-<tr>
-<td><code>SyntaxError: 'break' outside loop</code></td>
-<td><a href="syntax/#syntaxerror-break-outside-loop">→</a></td>
-</tr>
-<tr>
-<td><code>SyntaxError: cannot assign to literal</code></td>
-<td><a href="syntax/#syntaxerror-cannot-assign-to-literal">→</a></td>
-</tr>
-<tr>
-<td><code>SyntaxError: EOL while scanning string literal</code></td>
-<td><a href="syntax/#syntaxerror-eol-while-scanning-string-literal">→</a></td>
-</tr>
-<tr>
-<td><code>SyntaxError: f-string: expecting '}'</code></td>
-<td><a href="syntax/#syntaxerror-f-string-expecting-">→</a></td>
-</tr>
-<tr>
-<td><code>IndentationError: expected an indented block</code></td>
-<td><a href="syntax/#indentationerror-expected-an-indented-block">→</a></td>
-</tr>
-<tr>
-<td><code>IndentationError: unexpected indent</code></td>
-<td><a href="syntax/#indentationerror-unexpected-indent">→</a></td>
-</tr>
-<tr>
-<td><code>IndentationError: unindent does not match</code></td>
-<td><a href="syntax/#indentationerror-unindent-does-not-match">→</a></td>
-</tr>
-<tr>
-<td><code>TabError: inconsistent use of tabs and spaces</code></td>
-<td><a href="syntax/#taberror-inconsistent-use-of-tabs-and-spaces">→</a></td>
-</tr>
-</tbody>
-</table>
+<p><a href="syntax/">SyntaxError, IndentationError, TabError, invalid character, return outside function, break outside loop, f-string.</a></p>
 <h3 id="_3">💥 Во время работы — программа запустилась и упала<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Ошибка</th>
-<th>Разбор</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>ValueError: invalid literal for int()</code></td>
-<td><a href="runtime/#valueerror-invalid-literal-for-int-with-base-10-привет">→</a></td>
-</tr>
-<tr>
-<td><code>TypeError: unsupported operand type(s) for +</code></td>
-<td><a href="runtime/#typeerror-unsupported-operand-types-for--int-and-str">→</a></td>
-</tr>
-<tr>
-<td><code>TypeError: can only concatenate str</code></td>
-<td><a href="runtime/#typeerror-can-only-concatenate-str-not-int-to-str">→</a></td>
-</tr>
-<tr>
-<td><code>TypeError: 'int' object is not callable</code></td>
-<td><a href="runtime/#typeerror-int-object-is-not-callable">→</a></td>
-</tr>
-<tr>
-<td><code>NameError: name 'x' is not defined</code></td>
-<td><a href="runtime/#nameerror-name-x-is-not-defined">→</a></td>
-</tr>
-<tr>
-<td><code>NameError: name 'привет' is not defined</code></td>
-<td><a href="runtime/#nameerror-name-привет-is-not-defined">→</a></td>
-</tr>
-<tr>
-<td><code>IndexError: list index out of range</code></td>
-<td><a href="runtime/#indexerror-list-index-out-of-range">→</a></td>
-</tr>
-<tr>
-<td><code>KeyError: 'name'</code></td>
-<td><a href="runtime/#keyerror-name">→</a></td>
-</tr>
-<tr>
-<td><code>AttributeError: 'str' object has no attribute</code></td>
-<td><a href="runtime/#attributeerror-str-object-has-no-attribute-append">→</a></td>
-</tr>
-<tr>
-<td><code>AttributeError: 'NoneType' object has no attribute</code></td>
-<td><a href="runtime/#attributeerror-nonetype-object-has-no-attribute-x">→</a></td>
-</tr>
-<tr>
-<td><code>ZeroDivisionError: division by zero</code></td>
-<td><a href="runtime/#zerodivisionerror-division-by-zero">→</a></td>
-</tr>
-<tr>
-<td><code>UnboundLocalError: local variable</code></td>
-<td><a href="runtime/#unboundlocalerror-local-variable-x-referenced-before-assignment">→</a></td>
-</tr>
-<tr>
-<td><code>RecursionError: maximum recursion depth</code></td>
-<td><a href="runtime/#recursionerror-maximum-recursion-depth-exceeded">→</a></td>
-</tr>
-<tr>
-<td><code>UnicodeDecodeError: 'utf-8' codec</code></td>
-<td><a href="runtime/#unicodedecodeerror-utf-8-codec-cant-decode-byte-">→</a></td>
-</tr>
-</tbody>
-</table>
+<p><a href="runtime/">ValueError, TypeError, NameError, IndexError, KeyError, AttributeError, ZeroDivisionError, UnboundLocalError, RecursionError, UnicodeDecodeError.</a></p>
 <h3 id="_4">📥 Импорт и файлы<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Ошибка</th>
-<th>Разбор</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>ModuleNotFoundError: No module named 'X'</code></td>
-<td><a href="import/#modulenotfounderror-no-module-named-requests">→</a></td>
-</tr>
-<tr>
-<td><code>ImportError: cannot import name 'X'</code></td>
-<td><a href="import/#importerror-cannot-import-name-x-from-y">→</a></td>
-</tr>
-<tr>
-<td><code>ImportError: attempted relative import</code></td>
-<td><a href="import/#importerror-attempted-relative-import-with-no-known-parent-package">→</a></td>
-</tr>
-<tr>
-<td><code>FileNotFoundError: [Errno 2]</code></td>
-<td><a href="import/#filenotfounderror-errno-2-no-such-file-or-directory-datacsv">→</a></td>
-</tr>
-<tr>
-<td><code>IsADirectoryError: [Errno 21]</code></td>
-<td><a href="import/#isadirectoryerror-errno-21-is-a-directory">→</a></td>
-</tr>
-<tr>
-<td><code>PermissionError: [Errno 13]</code></td>
-<td><a href="import/#permissionerror-errno-13-permission-denied">→</a></td>
-</tr>
-<tr>
-<td><code>OSError: [Errno 28] No space left</code></td>
-<td><a href="import/#oserror-errno-28-no-space-left-on-device">→</a></td>
-</tr>
-</tbody>
-</table>
+<p><a href="import/">ModuleNotFoundError, ImportError, FileNotFoundError, IsADirectoryError, PermissionError, OSError.</a></p>
 <h3 id="python-pip-venv">⚙️ Окружение — терминал, Python, pip, venv<a class="headerlink" href="#python-pip-venv" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Ошибка</th>
-<th>Разбор</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>'python' is not recognized</code> (Windows)</td>
-<td><a href="environment/#python-is-not-recognized-as-an-internal-or-external-command-windows">→</a></td>
-</tr>
-<tr>
-<td><code>python: command not found</code> (macOS/Linux)</td>
-<td><a href="environment/#python-command-not-found-macoslinux">→</a></td>
-</tr>
-<tr>
-<td><code>pip: command not found</code></td>
-<td><a href="environment/#pip-command-not-found">→</a></td>
-</tr>
-<tr>
-<td><code>Fatal error in launcher</code></td>
-<td><a href="environment/#fatal-error-in-launcher-unable-to-create-process-using-">→</a></td>
-</tr>
-<tr>
-<td><code>error: externally-managed-environment</code></td>
-<td><a href="environment/#error-externally-managed-environment-linux-python-312">→</a></td>
-</tr>
-<tr>
-<td><code>ERROR: Could not find a version</code></td>
-<td><a href="environment/#error-could-not-find-a-version-that-satisfies-the-requirement-x">→</a></td>
-</tr>
-<tr>
-<td><code>error: Microsoft Visual C++ 14.0 is required</code></td>
-<td><a href="environment/#error-microsoft-visual-c-140-or-greater-is-required">→</a></td>
-</tr>
-<tr>
-<td><code>Permission denied</code> (pip install)</td>
-<td><a href="environment/#permission-denied-при-pip-install-linuxmacos">→</a></td>
-</tr>
-<tr>
-<td><code>Scripts\activate.ps1 cannot be loaded</code></td>
-<td><a href="environment/#scriptsactivateps1-cannot-be-loaded-because-running-scripts-is-disabled">→</a></td>
-</tr>
-<tr>
-<td><code>SSL: CERTIFICATE_VERIFY_FAILED</code></td>
-<td><a href="environment/#ssl-certificate_verify_failed-при-pip-install">→</a></td>
-</tr>
-</tbody>
-</table>
+<p><a href="environment/">'python' not recognized, 'pip' not found, Fatal error in launcher, externally-managed-environment, Microsoft Visual C++, SSL errors.</a></p>
 <h3 id="git-mkdocs">🐙 Git и MkDocs<a class="headerlink" href="#git-mkdocs" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Ошибка</th>
-<th>Разбор</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Author identity unknown</code></td>
-<td><a href="git-mkdocs/#author-identity-unknown-please-tell-me-who-you-are">→</a></td>
-</tr>
-<tr>
-<td><code>fatal: not a git repository</code></td>
-<td><a href="git-mkdocs/#fatal-not-a-git-repository">→</a></td>
-</tr>
-<tr>
-<td><code>fatal: remote origin already exists</code></td>
-<td><a href="git-mkdocs/#fatal-remote-origin-already-exists">→</a></td>
-</tr>
-<tr>
-<td><code>fatal: repository 'https://...' not found</code></td>
-<td><a href="git-mkdocs/#fatal-repository-https-not-found">→</a></td>
-</tr>
-<tr>
-<td><code>error: failed to push some refs</code></td>
-<td><a href="git-mkdocs/#error-failed-to-push-some-refs-to-">→</a></td>
-</tr>
-<tr>
-<td><code>error: Your local changes would be overwritten</code></td>
-<td><a href="git-mkdocs/#error-your-local-changes-would-be-overwritten-by-merge">→</a></td>
-</tr>
-<tr>
-<td><code>Permission denied (publickey)</code></td>
-<td><a href="git-mkdocs/#permission-denied-publickey">→</a></td>
-</tr>
-<tr>
-<td><code>Support for password authentication was removed</code></td>
-<td><a href="git-mkdocs/#support-for-password-authentication-was-removed">→</a></td>
-</tr>
-<tr>
-<td><code>CONFLICT (content): Merge conflict in ...</code></td>
-<td><a href="git-mkdocs/#merge-conflict-in-filetxt">→</a></td>
-</tr>
-<tr>
-<td><code>fatal: refusing to merge unrelated histories</code></td>
-<td><a href="git-mkdocs/#fatal-refusing-to-merge-unrelated-histories">→</a></td>
-</tr>
-<tr>
-<td><code>error: pathspec '...' did not match any file(s)</code></td>
-<td><a href="git-mkdocs/#error-pathspec-filetxt-did-not-match-any-files-known-to-git">→</a></td>
-</tr>
-<tr>
-<td><code>Config file 'mkdocs.yml' does not exist</code></td>
-<td><a href="git-mkdocs/#config-file-mkdocsyml-does-not-exist">→</a></td>
-</tr>
-<tr>
-<td><code>A reference to 'X.md' is included in the 'nav'</code></td>
-<td><a href="git-mkdocs/#config-value-nav-a-reference-to-xmd-is-included-in-the-nav-configuration-but-the-file-does-not-exist">→</a></td>
-</tr>
-<tr>
-<td><code>ImportError: Bad git executable</code></td>
-<td><a href="git-mkdocs/#importerror-bad-git-executable">→</a></td>
-</tr>
-<tr>
-<td><code>InvalidGitRepositoryError</code></td>
-<td><a href="git-mkdocs/#invalidgitrepositoryerror">→</a></td>
-</tr>
-<tr>
-<td><code>ModuleNotFoundError: No module named 'mkdocs'</code></td>
-<td><a href="git-mkdocs/#modulenotfounderror-no-module-named-mkdocs">→</a></td>
-</tr>
-<tr>
-<td><code>mkdocs: command not found</code></td>
-<td><a href="git-mkdocs/#mkdocs-command-not-found">→</a></td>
-</tr>
-</tbody>
-</table>
+<p><a href="git-mkdocs/">Author identity unknown, not a git repository, failed to push, merge conflict, mkdocs.yml does not exist, Bad git executable, Actions fails.</a></p>
 <hr />
 <h2 id="python-">📖 Как читать Python-ошибку<a class="headerlink" href="#python-" title="Permanent link">&para;</a></h2>
 <p>Пример:</p>
@@ -8542,7 +8222,7 @@ Python и не паниковать.</p>
 </div>
 <hr />
 <h2 id="_7">🔗 Что дальше<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p>→ Разберите свою ошибку в одной из категорий:</p>
+<p>→ Выберите категорию и найдите свою ошибку через <code>Ctrl + F</code>:</p>
 <ul>
 <li><a href="syntax/">Синтаксис</a> — опечатки, отступы, скобки</li>
 <li><a href="runtime/">Во время работы</a> — <code>ValueError</code>, <code>TypeError</code>, <code>IndexError</code></li>
@@ -8570,7 +8250,7 @@ Python и не паниковать.</p>
     <span class="md-icon" title="Последнее обновление">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="10 октября 2026 г. 13:40:15 UTC">10 октября 2026 г.</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="10 октября 2026 г. 15:32:10 UTC">10 октября 2026 г.</span>
   </span>
 
     
