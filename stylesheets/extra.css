@@ -1,10 +1,103 @@
-.md-content__inner { padding-bottom: 3rem; }
-.md-typeset pre > code { font-size: .82rem; line-height: 1.55; }
+/* ============================================================
+   Питон-Планета — кастомные стили
+   ============================================================ */
 
-/* «Просто» — тёплый жёлтый */
-.md-typeset .admonition.example { border-color: #ffb300; }
-.md-typeset .admonition.example > .admonition-title { background-color: rgba(255,179,0,.1); }
+/* --- Общее --- */
+.md-content__inner {
+    padding-bottom: 3rem;
+}
 
-/* «Подробнее» — фиолетовый */
-.md-typeset .admonition.info { border-color: #7c4dff; }
-.md-typeset .admonition.info > .admonition-title { background-color: rgba(124,77,255,.1); }
+.md-typeset pre > code {
+    font-size: .82rem;
+    line-height: 1.55;
+}
+
+/* --- Блоки admonition --- */
+.md-typeset .admonition.example {
+    border-color: #ffb300;
+}
+.md-typeset .admonition.example > .admonition-title {
+    background-color: rgba(255, 179, 0, .1);
+}
+
+.md-typeset .admonition.info {
+    border-color: #7c4dff;
+}
+.md-typeset .admonition.info > .admonition-title {
+    background-color: rgba(124, 77, 255, .1);
+}
+
+.md-typeset .admonition.tip {
+    border-color: #22D3EE;
+}
+.md-typeset .admonition.tip > .admonition-title {
+    background-color: rgba(34, 211, 238, .1);
+}
+
+.md-typeset .admonition.warning {
+    border-color: #f44336;
+}
+.md-typeset .admonition.warning > .admonition-title {
+    background-color: rgba(244, 67, 54, .1);
+}
+
+/* --- Индикатор прогресса чтения --- */
+#reading-progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, #6366F1, #22D3EE);
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+    pointer-events: none;
+}
+
+/* --- Логотип в шапке --- */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 2rem;
+    width: auto;
+}
+
+/* --- Красивее блоки кода --- */
+.md-typeset .highlight {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* --- Таблицы: чуть больше воздуха --- */
+.md-typeset table:not([class]) {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    font-weight: 600;
+}
+
+/* --- Ссылки --- */
+.md-typeset a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+}
+.md-typeset a:hover {
+    border-bottom-color: currentColor;
+}
+
+/* --- Улучшение поиска --- */
+.md-search__inner {
+    border-radius: 8px;
+}
+
+/* --- Компактнее навигация на мобильных --- */
+@media screen and (max-width: 76.1875em) {
+    .md-nav--primary .md-nav__title {
+        background-color: var(--md-primary-fg-color);
+        color: var(--md-primary-bg-color);
+    }
+}
