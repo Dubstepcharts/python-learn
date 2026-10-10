@@ -1,0 +1,170 @@
+site_name: Питон-Планета
+site_description: Учебник по Python для школьников 5–11 класса
+site_url: https://Dubstepcharts.github.io/python-learn/
+repo_url: https://github.com/Dubstepcharts/python-learn
+repo_name: Dubstepcharts/python-learn
+copyright: © Питон-Планета
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: ru
+  - git-revision-date-localized:
+      type: date
+      locale: ru
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Главная: index.md
+
+  - 🚀 Старт:
+      - 00-start/index.md
+      - Установка Python: 00-start/install.md
+      - Первая программа: 00-start/first-program.md
+      - Редактор кода: 00-start/ide.md
+
+  - 📘 Ядро Python:
+      - Основы:
+          - 01-basics/index.md
+          - Переменные: 01-basics/variables.md
+          - Типы данных: 01-basics/data-types.md
+          - Операторы: 01-basics/operators.md
+          - Ввод и вывод: 01-basics/input-output.md
+          - Комментарии: 01-basics/comments.md
+      - Управление потоком:
+          - 02-control-flow/index.md
+          - Условия if/else: 02-control-flow/if-else.md
+          - Цикл while: 02-control-flow/while.md
+          - Цикл for: 02-control-flow/for.md
+          - break / continue: 02-control-flow/break-continue.md
+      - Строки:
+          - 03-strings/index.md
+          - Методы строк: 03-strings/methods.md
+          - Форматирование: 03-strings/formatting.md
+          - Срезы: 03-strings/slicing.md
+      - Коллекции:
+          - 04-collections/index.md
+          - Списки: 04-collections/lists.md
+          - Кортежи: 04-collections/tuples.md
+          - Словари: 04-collections/dicts.md
+          - Множества: 04-collections/sets.md
+          - Генераторы коллекций: 04-collections/comprehensions.md
+      - Функции:
+          - 05-functions/index.md
+          - Определение: 05-functions/definition.md
+          - Аргументы: 05-functions/arguments.md
+          - Возврат значений: 05-functions/return.md
+          - Область видимости: 05-functions/scope.md
+          - lambda: 05-functions/lambda.md
+          - Декораторы: 05-functions/decorators.md
+      - Файлы и ошибки:
+          - 06-files-errors/index.md
+          - Работа с файлами: 06-files-errors/files.md
+          - Исключения: 06-files-errors/exceptions.md
+      - Модули и пакеты:
+          - 07-modules/index.md
+          - import: 07-modules/import.md
+          - Свои модули: 07-modules/custom-modules.md
+          - pip: 07-modules/pip.md
+      - ООП:
+          - 08-oop/index.md
+          - Классы и объекты: 08-oop/classes.md
+          - Наследование: 08-oop/inheritance.md
+          - Полиморфизм: 08-oop/polymorphism.md
+          - Магические методы: 08-oop/magic-methods.md
+      - Стандартная библиотека:
+          - 09-stdlib/index.md
+          - math и random: 09-stdlib/math-random.md
+          - datetime: 09-stdlib/datetime.md
+          - os и sys: 09-stdlib/os-sys.md
+          - json: 09-stdlib/json.md
+
+  - 🧩 Библиотеки:
+      - 🐢 Turtle:
+          - 10-turtle/index.md
+          - Основы: 10-turtle/basics.md
+          - Фигуры: 10-turtle/shapes.md
+          - Цвета: 10-turtle/colors.md
+          - Циклы в turtle: 10-turtle/loops-in-turtle.md
+          - Проекты: 10-turtle/projects.md
+      - 🖥️ PyQt5:
+          - 11-pyqt5/index.md
+          - Установка: 11-pyqt5/install.md
+          - Первое окно: 11-pyqt5/first-window.md
+          - Виджеты: 11-pyqt5/widgets.md
+          - Компоновки: 11-pyqt5/layouts.md
+          - Сигналы и слоты: 11-pyqt5/signals-slots.md
+          - Проект «Калькулятор»: 11-pyqt5/calculator-project.md
+      - 📊 pandas:
+          - 12-pandas/index.md
+          - Установка: 12-pandas/install.md
+          - Series и DataFrame: 12-pandas/series-dataframe.md
+          - Чтение и запись: 12-pandas/read-write.md
+          - Фильтрация: 12-pandas/filtering.md
+          - groupby: 12-pandas/groupby.md
+          - Графики: 12-pandas/plots.md
+      - 📱 Kivy:
+          - 13-kivy/index.md
+          - Установка: 13-kivy/install.md
+          - Первое приложение: 13-kivy/first-app.md
+          - Виджеты: 13-kivy/widgets.md
+          - Язык KV: 13-kivy/kv-language.md
+          - Сборка приложения: 13-kivy/packaging.md
+
+  - 🎯 Проекты:
+      - 14-projects/index.md
+      - Для начинающих: 14-projects/beginner.md
+      - Средний уровень: 14-projects/intermediate.md
+      - Продвинутый уровень: 14-projects/advanced.md
