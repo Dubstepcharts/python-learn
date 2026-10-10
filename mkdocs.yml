@@ -126,6 +126,7 @@ nav:
           - Магические методы: 08-oop/magic-methods.md
       - Стандартная библиотека:
           - 09-stdlib/index.md
+          - Все встроенные функции: 09-stdlib/builtins.md
           - math и random: 09-stdlib/math-random.md
           - datetime: 09-stdlib/datetime.md
           - os и sys: 09-stdlib/os-sys.md
