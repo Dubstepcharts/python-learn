@@ -27,7 +27,7 @@
     
     
       
-        <title>index - Питон-Планета</title>
+        <title>Коллекции - Питон-Планета</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#index" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              index
+              Коллекции
             
           </span>
         </div>
@@ -2290,6 +2290,8 @@
       
         
       
+        
+      
     
     
     
@@ -2347,6 +2349,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-stdlib/builtins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Все встроенные функции
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -3701,6 +3731,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Что в разделе
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Сравнение четырёх типов
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Что вы сможете после раздела
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Что дальше
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3719,11 +3801,102 @@
   
 
 
-<h1 id="index">index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Страница в разработке</p>
-<p>Скоро здесь появится материал.</p>
+<h1 id="_1">Коллекции<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>Иногда нужно хранить не одно значение, а много: список покупок, набор оценок, имена учеников. Для этого в Python есть <strong>коллекции</strong> — контейнеры, в которых живёт много значений сразу.</p>
+<p>В этом разделе — четыре основных типа коллекций и генераторы, которые делают код коротким и красивым.</p>
+<div class="admonition tip">
+<p class="admonition-title">Как учиться</p>
+<p>Списки — самые используемые. Освойте их в первую очередь. Кортежи, словари
+и множества — по мере надобности. Генераторы (comprehensions) — когда
+почувствуете уверенность с обычными циклами.</p>
 </div>
+<hr />
+<h2 id="_2">📚 Что в разделе<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Что узнаете</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="lists/">Списки</a></td>
+<td><strong>Все методы</strong> <code>list</code> + срезы, сортировка, изменение</td>
+</tr>
+<tr>
+<td><a href="tuples/">Кортежи</a></td>
+<td>Неизменяемые последовательности — где и зачем</td>
+</tr>
+<tr>
+<td><a href="dicts/">Словари</a></td>
+<td><strong>Все методы</strong> <code>dict</code> + пары «ключ-значение»</td>
+</tr>
+<tr>
+<td><a href="sets/">Множества</a></td>
+<td><strong>Все методы</strong> <code>set</code> + математика множеств</td>
+</tr>
+<tr>
+<td><a href="comprehensions/">Генераторы коллекций</a></td>
+<td>Однострочники вместо циклов</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">📊 Сравнение четырёх типов<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Изменяемый?</th>
+<th>Порядок важен?</th>
+<th>Дубликаты?</th>
+<th>Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Список</strong> <code>list</code></td>
+<td>✅ Да</td>
+<td>✅ Да</td>
+<td>✅ Да</td>
+<td><code>[1, 2, 3, 2]</code></td>
+</tr>
+<tr>
+<td><strong>Кортеж</strong> <code>tuple</code></td>
+<td>❌ Нет</td>
+<td>✅ Да</td>
+<td>✅ Да</td>
+<td><code>(1, 2, 3)</code></td>
+</tr>
+<tr>
+<td><strong>Словарь</strong> <code>dict</code></td>
+<td>✅ Да</td>
+<td>✅ Да (с 3.7)</td>
+<td>Только ключи</td>
+<td><code>{"a": 1, "b": 2}</code></td>
+</tr>
+<tr>
+<td><strong>Множество</strong> <code>set</code></td>
+<td>✅ Да</td>
+<td>❌ Нет</td>
+<td>❌ Нет</td>
+<td><code>{1, 2, 3}</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">🎯 Что вы сможете после раздела<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Хранить и обрабатывать списки любой длины</li>
+<li>Использовать кортежи там, где данные не должны меняться</li>
+<li>Строить словари для быстрого поиска по ключу</li>
+<li>Решать задачи «есть ли пересечения», «что уникально» через множества</li>
+<li>Писать генераторы вместо длинных циклов</li>
+</ul>
+<hr />
+<h2 id="_5">🔗 Что дальше<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>→ Начнём с самого главного — <a href="lists/">списков</a>.</p>
 
 
 
@@ -3744,7 +3917,7 @@
     <span class="md-icon" title="Последнее обновление">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="10 октября 2026 г. 10:48:30 UTC">10 октября 2026 г.</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="10 октября 2026 г. 11:18:26 UTC">10 октября 2026 г.</span>
   </span>
 
     
