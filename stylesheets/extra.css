@@ -61,16 +61,135 @@
     width: auto;
 }
 
-/* --- Красивее блоки кода --- */
+/* ============================================================
+   КНОПКИ на главной
+   ============================================================ */
+
+/* Обычные кнопки — крупнее */
+.md-typeset .md-button {
+    padding: 0.7em 1.5em;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    border-width: 2px;
+}
+
+.md-typeset .md-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Главная кнопка — заметнее */
+.md-typeset .md-button--primary {
+    background: linear-gradient(135deg, #6366F1, #4F46E5);
+    border-color: transparent;
+    color: white !important;
+}
+
+.md-typeset .md-button--primary:hover {
+    background: linear-gradient(135deg, #4F46E5, #4338CA);
+}
+
+/* Иконки в кнопках — крупнее */
+.md-typeset .md-button .twemoji,
+.md-typeset .md-button svg {
+    height: 1.1em;
+    width: 1.1em;
+    vertical-align: -0.2em;
+    margin-right: 0.3em;
+}
+
+/* ============================================================
+   КАРТОЧКИ (Grid Cards) на главной
+   ============================================================ */
+
+.md-typeset .grid.cards {
+    grid-gap: 1rem;
+    margin: 1.5em 0;
+}
+
+.md-typeset .grid.cards > ul {
+    grid-gap: 1rem;
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+    border-radius: 12px;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    padding: 1.2rem;
+    transition: all 0.25s ease;
+    background: var(--md-default-bg-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+    border-color: var(--md-primary-fg-color);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Иконки в карточках — крупнее и цветные */
+.md-typeset .grid.cards .twemoji,
+.md-typeset .grid.cards .twemoji svg,
+.md-typeset .grid.cards .lg svg {
+    height: 2.2rem;
+    width: 2.2rem;
+    fill: var(--md-primary-fg-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Заголовки в карточках */
+.md-typeset .grid.cards h3 {
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+/* Разделитель --- внутри карточки */
+.md-typeset .grid.cards hr {
+    margin: 0.6em 0;
+    border: none;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Ссылка в карточке */
+.md-typeset .grid.cards a {
+    font-weight: 600;
+    color: var(--md-primary-fg-color);
+    border-bottom: none;
+}
+
+.md-typeset .grid.cards a:hover {
+    border-bottom: none;
+    opacity: 0.8;
+}
+
+/* ============================================================
+   Блок «Цифры» на главной
+   ============================================================ */
+
+/* Список с цифрами — красивее */
+.md-typeset h2 + ul li strong {
+    color: var(--md-primary-fg-color);
+}
+
+/* ============================================================
+   ОБЩИЕ УЛУЧШЕНИЯ
+   ============================================================ */
+
+/* Красивее блоки кода */
 .md-typeset .highlight {
     border-radius: 8px;
     overflow: hidden;
 }
 
-/* --- Таблицы: чуть больше воздуха --- */
+/* Таблицы: чуть больше воздуха */
 .md-typeset table:not([class]) {
-    border-radius: 6px;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .md-typeset table:not([class]) th {
@@ -79,7 +198,7 @@
     font-weight: 600;
 }
 
-/* --- Ссылки --- */
+/* Ссылки */
 .md-typeset a {
     text-decoration: none;
     border-bottom: 1px solid transparent;
@@ -89,15 +208,104 @@
     border-bottom-color: currentColor;
 }
 
-/* --- Улучшение поиска --- */
+/* Улучшение поиска */
 .md-search__inner {
     border-radius: 8px;
 }
 
-/* --- Компактнее навигация на мобильных --- */
+/* Заголовок H1 на главной — крупнее */
+.md-content__inner > h1:first-child {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+/* Компактнее навигация на мобильных */
 @media screen and (max-width: 76.1875em) {
     .md-nav--primary .md-nav__title {
         background-color: var(--md-primary-fg-color);
         color: var(--md-primary-bg-color);
     }
+}
+
+/* ============================================================
+   ПОПУЛЯРНОЕ — акцентный блок на главной
+   ============================================================ */
+
+/* Заголовок блока — с акцентом */
+.md-typeset h2:has(+ .grid.popular)::before,
+.md-typeset h2 + .grid.popular ~ h2::before {
+    content: "";
+    display: inline-block;
+}
+
+/* Карточки "Популярное" — цветной фон и заметнее */
+.md-typeset .grid.cards.popular > ul > li {
+    background: linear-gradient(135deg,
+        rgba(99, 102, 241, 0.08),
+        rgba(34, 211, 238, 0.08));
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Полоска слева */
+.md-typeset .grid.cards.popular > ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #6366F1, #22D3EE);
+    border-radius: 4px 0 0 4px;
+}
+
+/* Hover — усилить эффект */
+.md-typeset .grid.cards.popular > ul > li:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Иконки в "Популярном" — крупнее */
+.md-typeset .grid.cards.popular .twemoji,
+.md-typeset .grid.cards.popular .twemoji svg,
+.md-typeset .grid.cards.popular .lg svg {
+    height: 2.6rem;
+    width: 2.6rem;
+    fill: #6366F1;
+    margin-bottom: 0.4rem;
+}
+
+/* Заголовки в "Популярном" — заметнее */
+.md-typeset .grid.cards.popular h3 {
+    font-size: 1.1rem;
+    color: var(--md-primary-fg-color);
+    margin-bottom: 0.4em;
+}
+
+/* Ссылка в "Популярном" */
+.md-typeset .grid.cards.popular a {
+    color: #4F46E5;
+    font-weight: 700;
+}
+
+/* На тёмной теме — светлее */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.popular > ul > li {
+    background: linear-gradient(135deg,
+        rgba(99, 102, 241, 0.15),
+        rgba(34, 211, 238, 0.15));
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.popular a {
+    color: #A5B4FC;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.popular h3 {
+    color: #A5B4FC;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.popular .twemoji svg {
+    fill: #A5B4FC;
 }
