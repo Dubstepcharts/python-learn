@@ -13,7 +13,7 @@
 [![Сайт](https://img.shields.io/badge/сайт-открыть-brightgreen)](https://Dubstepcharts.github.io/python-learn/)
 
 **[🌐 Открыть сайт](https://Dubstepcharts.github.io/python-learn/)** ·
-**[📚 Все разделы](https://Dubstepcharts.github.io/python-learn/)** ·
+**[🚀 Начать с нуля](https://Dubstepcharts.github.io/python-learn/00-start/)** ·
 **[🆘 Частые ошибки](https://Dubstepcharts.github.io/python-learn/41-errors/)**
 
 </div>
@@ -102,62 +102,18 @@
 
 ---
 
-## 🚀 Локальный запуск
+## 🚀 Как читать учебник
 
-### Требования
+**Самый простой способ** — открыть сайт: **[Dubstepcharts.github.io/python-learn](https://Dubstepcharts.github.io/python-learn/)**
 
-- **Python 3.10+**
-- **Git** (для клонирования и плагина дат)
+Дальше:
 
-### Установка
+1. Начните с раздела **«Старт»** — установите Python и редактор
+2. Проходите разделы по порядку: **Ядро Python** → **Библиотеки** → **Профессиональное**
+3. Когда что-то падает — открывайте **«Ошибки»**
+4. Для практики — раздел **«Проекты»**
 
-```bash
-# 1. Клонировать репозиторий
-git clone https://github.com/Dubstepcharts/python-learn.git
-cd python-learn
-
-# 2. Создать виртуальное окружение (рекомендуется)
-python -m venv .venv
-
-# Windows:
-.\.venv\Scripts\Activate.ps1
-# macOS / Linux:
-source .venv/bin/activate
-
-# 3. Установить зависимости
-pip install -r requirements.txt
-
-# 4. Запустить локальный сервер
-mkdocs serve
-```
-
-Откройте **http://127.0.0.1:8000** — сайт работает локально.
-
-### Собрать статику
-
-```bash
-mkdocs build
-```
-
-Результат — в папке `site/`.
-
-### Деплой
-
-Автоматически при `git push` в `main`:
-
-- GitHub Actions запускает `mkdocs gh-deploy`
-- Сайт собирается в ветку `gh-pages`
-- Через 30–60 секунд обновляется по адресу https://Dubstepcharts.github.io/python-learn/
-
----
-
-## 🛠️ Стек
-
-- **MkDocs** — генератор статического сайта
-- **Material for MkDocs** — тема оформления
-- **Python-Markdown** + **PyMdown Extensions** — расширения Markdown
-- **GitHub Pages** — хостинг
-- **GitHub Actions** — CI/CD
+**Никакой регистрации, рекламы и оплаты.** Просто открывайте и читайте.
 
 ---
 
@@ -182,81 +138,79 @@ python-learn/
 
 ---
 
-## ✏️ Как добавить свою страницу
+## 🛠️ Для разработчиков
+
+Если хотите **развернуть свою копию** учебника (например, для своей школы или с другим контентом).
+
+### Стек
+
+- **MkDocs** — генератор статического сайта
+- **Material for MkDocs** — тема оформления
+- **Python-Markdown** + **PyMdown Extensions** — расширения Markdown
+- **GitHub Pages** — хостинг
+- **GitHub Actions** — CI/CD
+
+### Требования
+
+- **Python 3.10+**
+- **Git**
+
+### Локальный запуск
+
+```bash
+# 1. Клонировать репозиторий
+git clone https://github.com/Dubstepcharts/python-learn.git
+cd python-learn
+
+# 2. Создать виртуальное окружение (рекомендуется)
+python -m venv .venv
+
+# Windows:
+.\.venv\Scripts\Activate.ps1
+# macOS / Linux:
+source .venv/bin/activate
+
+# 3. Установить зависимости
+pip install -r requirements.txt
+
+# 4. Запустить локальный сервер
+mkdocs serve
+```
+
+Откройте **http://127.0.0.1:8000** — сайт работает локально.
+
+### Сборка статики
+
+```bash
+mkdocs build
+```
+
+Результат — в папке `site/`.
+
+### Развернуть свою копию
+
+1. Нажмите **Fork** на GitHub — получите свою копию репозитория.
+2. В `mkdocs.yml` замените в начале файла:
+
+   ```yaml
+   site_url: https://ВАШ_НИК.github.io/ИМЯ_РЕПО/
+   repo_url: https://github.com/ВАШ_НИК/ИМЯ_РЕПО
+   repo_name: ВАШ_НИК/ИМЯ_РЕПО
+   ```
+
+3. В своём репозитории: **Settings → Pages → Source: Deploy from a branch → `gh-pages` / `(root)` → Save**.
+4. Пушьте изменения — сайт **автоматически** обновляется на `https://ВАШ_НИК.github.io/ИМЯ_РЕПО/` через GitHub Actions.
+
+### Как добавить свою страницу
 
 1. Создайте файл в `docs/` — например, `docs/01-basics/loops.md`
-2. Напишите содержимое в Markdown:
+2. Напишите содержимое в Markdown. Пример:
 
-```markdown
-# Заголовок
+   ````markdown
+   # Заголовок
 
-Текст статьи с примерами.
+   Текст статьи с примерами.
 
-```python
-print("Привет!")
-```
-```
-
-3. Добавьте файл в `mkdocs.yml` в раздел `nav:`
-4. Запустите `mkdocs serve` — увидите страницу локально
-5. Сделайте `git push` — сайт обновится автоматически
-
----
-
-## 🤝 Как помочь проекту
-
-Мы рады любому вкладу:
-
-- 🐛 **Нашли ошибку** — создайте [Issue](https://github.com/Dubstepcharts/python-learn/issues)
-- ✏️ **Хотите улучшить** — сделайте Fork, исправьте, пришлите Pull Request
-- 💡 **Идея нового раздела** — тоже Issue
-- 📣 **Рассказали друзьям** — уже помощь!
-
-**Правила простые:**
-
-1. Одна правка — один Pull Request
-2. Проверяйте локально перед отправкой (`mkdocs serve`)
-3. Пишите понятные сообщения коммитов
-
----
-
-## 📜 Лицензия
-
-Проект распространяется под лицензией **MIT**. См. файл [LICENSE](LICENSE).
-
-Вы можете:
-
-- ✅ Использовать в школе и дома
-- ✅ Изменять под себя
-- ✅ Распространять
-- ✅ Использовать в коммерческих целях
-
-Условие одно: сохранить упоминание автора.
-
----
-
-## 🙏 Благодарности
-
-- Команде **Material for MkDocs** за прекрасную тему
-- Всем авторам **PyMdown Extensions**
-- Сообществу **Python** — за лучший язык программирования
-- Ученикам и учителям, которые используют этот учебник
-
----
-
-## 🔗 Полезные ссылки
-
-- **[🌐 Сайт учебника](https://Dubstepcharts.github.io/python-learn/)**
-- **[📖 Официальная документация Python](https://docs.python.org/3/)**
-- **[🐙 GitHub репозиторий](https://github.com/Dubstepcharts/python-learn)**
-- **[🐛 Сообщить о проблеме](https://github.com/Dubstepcharts/python-learn/issues)**
-
----
-
-<div align="center">
-
-**Если проект помог — поставьте ⭐ на GitHub!**
-
-Сделано с ❤️ для школьников, которые учат Python
-
-</div>
+   ```python
+   print("Привет!")
+   ```
