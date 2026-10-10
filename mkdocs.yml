@@ -164,6 +164,33 @@ nav:
           - Язык KV: 13-kivy/kv-language.md
           - Сборка приложения: 13-kivy/packaging.md
 
+  - 🌐 Веб-разработка:
+      - 15-web/index.md
+      - Flask: 15-web/flask.md
+      - FastAPI: 15-web/fastapi.md
+      - Django: 15-web/django.md
+
+  - 📊 Наука о данных:
+      - NumPy:
+          - 16-numpy/index.md
+          - Основы: 16-numpy/basics.md
+          - Операции: 16-numpy/operations.md
+      - matplotlib:
+          - 17-matplotlib/index.md
+          - Основы: 17-matplotlib/basics.md
+          - Виды графиков: 17-matplotlib/charts.md
+          - seaborn: 17-matplotlib/seaborn.md
+      - scikit-learn:
+          - 18-sklearn/index.md
+          - Основы: 18-sklearn/basics.md
+          - Алгоритмы: 18-sklearn/algorithms.md
+
+  - 📡 Работа с интернетом:
+      - 19-requests/index.md
+      - requests: 19-requests/requests.md
+      - BeautifulSoup: 19-requests/beautifulsoup.md
+      - Selenium: 19-requests/selenium.md
+
   - 🎯 Проекты:
       - 14-projects/index.md
       - Для начинающих: 14-projects/beginner.md
