@@ -266,6 +266,31 @@ nav:
       - Погодный CLI: 35-step-projects/weather-cli.md
       - Дневник на Flask: 35-step-projects/flask-diary.md
 
+  - 🌿 Git:
+      - 36-git/index.md
+      - Основы: 36-git/basics.md
+      - Ветки и слияние: 36-git/branches.md
+      - GitHub: 36-git/github.md
+      - Продвинутое: 36-git/advanced.md
+
+  - 🐧 Linux:
+      - 37-linux/index.md
+      - Основы терминала: 37-linux/terminal.md
+      - Практика: 37-linux/practice.md
+
+  - 🎓 ЕГЭ и олимпиады:
+      - 38-exams/index.md
+      - ЕГЭ: 38-exams/ege.md
+      - Олимпиады: 38-exams/olympiads.md
+
+  - 💼 Карьера в IT:
+      - 39-career/index.md
+      - Профессии: 39-career/roles.md
+      - Интервью: 39-career/interviews.md
+
+  - 🚀 Что дальше:
+      - 40-whats-next/index.md
+
   - 🎯 Проекты:
       - 14-projects/index.md
       - Для начинающих: 14-projects/beginner.md
