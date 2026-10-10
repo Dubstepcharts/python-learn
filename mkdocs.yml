@@ -8,6 +8,8 @@ copyright: © Питон-Планета
 theme:
   name: material
   language: ru
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.svg
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -21,6 +23,9 @@ theme:
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
+    - navigation.footer
+    - navigation.tracking
+    - header.autohide
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -65,6 +70,18 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/progress.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Dubstepcharts
+      name: GitHub
+    - icon: fontawesome/solid/globe
+      link: https://Dubstepcharts.github.io/python-learn/
+      name: Сайт
 
 nav:
   - 🏠 Главная: index.md
@@ -265,6 +282,14 @@ nav:
           - Интервью: 39-career/interviews.md
       - 🚀 Что дальше:
           - 40-whats-next/index.md
+
+  - 🆘 Ошибки:
+      - 41-errors/index.md
+      - Синтаксис: 41-errors/syntax.md
+      - Во время работы: 41-errors/runtime.md
+      - Импорт и пути: 41-errors/import.md
+      - Окружение: 41-errors/environment.md
+      - Git и MkDocs: 41-errors/git-mkdocs.md
 
   - 🎯 Проекты:
       - Идеи:
