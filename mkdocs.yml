@@ -223,7 +223,30 @@ nav:
 
   - 🛠️ Утилиты:
       - 27-utilities/index.md
-      
+
+  - 🧠 Алгоритмы:
+      - 28-algorithms/index.md
+      - Сложность: 28-algorithms/complexity.md
+      - Сортировка и поиск: 28-algorithms/sorting-searching.md
+      - Структуры данных: 28-algorithms/data-structures.md
+
+  - 🤖 Продвинутое ML:
+      - 29-ml-advanced/index.md
+      - Нейросети с нуля: 29-ml-advanced/neural-networks.md
+      - PyTorch: 29-ml-advanced/pytorch.md
+      - TensorFlow / Keras: 29-ml-advanced/tensorflow.md
+
+  - 🕷️ Скрапинг-продакшн:
+      - 30-scraping-pro/index.md
+      - Этика и закон: 30-scraping-pro/ethics.md
+      - Продакшн: 30-scraping-pro/production.md
+
+  - ⚙️ DevOps:
+      - 31-devops/index.md
+      - Docker: 31-devops/docker.md
+      - GitHub Actions: 31-devops/github-actions.md
+      - Деплой: 31-devops/deploy.md
+
   - 🎯 Проекты:
       - 14-projects/index.md
       - Для начинающих: 14-projects/beginner.md
