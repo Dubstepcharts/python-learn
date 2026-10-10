@@ -67,7 +67,7 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Главная: index.md
+  - 🏠 Главная: index.md
 
   - 🚀 Старт:
       - 00-start/index.md
@@ -163,136 +163,117 @@ nav:
           - Виджеты: 13-kivy/widgets.md
           - Язык KV: 13-kivy/kv-language.md
           - Сборка приложения: 13-kivy/packaging.md
+      - 🪟 tkinter:
+          - 21-tkinter/index.md
+          - Виджеты и приложение: 21-tkinter/widgets.md
+      - 🎮 pygame:
+          - 22-pygame/index.md
+          - Основы: 22-pygame/basics.md
+      - 🖼️ Pillow:
+          - 23-pillow/index.md
+      - 🤖 Telegram-боты:
+          - 24-telegram/index.md
+          - aiogram: 24-telegram/aiogram.md
+      - 🧪 Тестирование:
+          - 25-pytest/index.md
+      - ⚡ Асинхронность:
+          - 26-asyncio/index.md
+          - Основы: 26-asyncio/basics.md
+      - 🛠️ Утилиты:
+          - 27-utilities/index.md
 
-  - 🌐 Веб-разработка:
-      - 15-web/index.md
-      - Flask: 15-web/flask.md
-      - FastAPI: 15-web/fastapi.md
-      - Django: 15-web/django.md
+  - 🌐 Профессиональное:
+      - 🌐 Веб-разработка:
+          - 15-web/index.md
+          - Flask: 15-web/flask.md
+          - FastAPI: 15-web/fastapi.md
+          - Django: 15-web/django.md
+      - 📡 Работа с интернетом:
+          - 19-requests/index.md
+          - requests: 19-requests/requests.md
+          - BeautifulSoup: 19-requests/beautifulsoup.md
+          - Selenium: 19-requests/selenium.md
+      - 🗄️ Базы данных:
+          - 20-databases/index.md
+          - Основы SQL: 20-databases/sql-basics.md
+          - SQLite: 20-databases/sqlite.md
+          - SQLAlchemy: 20-databases/sqlalchemy.md
+          - PostgreSQL: 20-databases/postgresql.md
+          - MongoDB: 20-databases/mongodb.md
+      - 📊 Наука о данных:
+          - NumPy:
+              - 16-numpy/index.md
+              - Основы: 16-numpy/basics.md
+              - Операции: 16-numpy/operations.md
+          - matplotlib:
+              - 17-matplotlib/index.md
+              - Основы: 17-matplotlib/basics.md
+              - Виды графиков: 17-matplotlib/charts.md
+              - seaborn: 17-matplotlib/seaborn.md
+          - scikit-learn:
+              - 18-sklearn/index.md
+              - Основы: 18-sklearn/basics.md
+              - Алгоритмы: 18-sklearn/algorithms.md
+      - 🧠 Алгоритмы:
+          - 28-algorithms/index.md
+          - Сложность: 28-algorithms/complexity.md
+          - Сортировка и поиск: 28-algorithms/sorting-searching.md
+          - Структуры данных: 28-algorithms/data-structures.md
+      - 🤖 Продвинутое ML:
+          - 29-ml-advanced/index.md
+          - Нейросети с нуля: 29-ml-advanced/neural-networks.md
+          - PyTorch: 29-ml-advanced/pytorch.md
+          - TensorFlow / Keras: 29-ml-advanced/tensorflow.md
+      - 🕷️ Скрапинг-продакшн:
+          - 30-scraping-pro/index.md
+          - Этика и закон: 30-scraping-pro/ethics.md
+          - Продакшн: 30-scraping-pro/production.md
+      - ⚙️ DevOps:
+          - 31-devops/index.md
+          - Docker: 31-devops/docker.md
+          - GitHub Actions: 31-devops/github-actions.md
+          - Деплой: 31-devops/deploy.md
+      - 🎮 Игровая разработка:
+          - 32-gamedev/index.md
+          - Ursina и Panda3D: 32-gamedev/engines.md
+      - 🔄 Работа с данными (ETL):
+          - 33-etl/index.md
+          - Пайплайны: 33-etl/pipelines.md
+      - 🔒 Криптография и безопасность:
+          - 34-security/index.md
+          - Основы криптографии: 34-security/crypto.md
+          - Безопасная разработка: 34-security/secure-coding.md
 
-  - 📊 Наука о данных:
-      - NumPy:
-          - 16-numpy/index.md
-          - Основы: 16-numpy/basics.md
-          - Операции: 16-numpy/operations.md
-      - matplotlib:
-          - 17-matplotlib/index.md
-          - Основы: 17-matplotlib/basics.md
-          - Виды графиков: 17-matplotlib/charts.md
-          - seaborn: 17-matplotlib/seaborn.md
-      - scikit-learn:
-          - 18-sklearn/index.md
-          - Основы: 18-sklearn/basics.md
-          - Алгоритмы: 18-sklearn/algorithms.md
-
-  - 📡 Работа с интернетом:
-      - 19-requests/index.md
-      - requests: 19-requests/requests.md
-      - BeautifulSoup: 19-requests/beautifulsoup.md
-      - Selenium: 19-requests/selenium.md
-
-  - 🗄️ Базы данных:
-      - 20-databases/index.md
-      - Основы SQL: 20-databases/sql-basics.md
-      - SQLite: 20-databases/sqlite.md
-      - SQLAlchemy: 20-databases/sqlalchemy.md
-      - PostgreSQL: 20-databases/postgresql.md
-      - MongoDB: 20-databases/mongodb.md
-
-  - 🪟 tkinter:
-      - 21-tkinter/index.md
-      - Виджеты и приложение: 21-tkinter/widgets.md
-
-  - 🎮 pygame:
-      - 22-pygame/index.md
-      - Основы: 22-pygame/basics.md
-
-  - 🖼️ Pillow:
-      - 23-pillow/index.md
-
-  - 🤖 Telegram-боты:
-      - 24-telegram/index.md
-      - aiogram: 24-telegram/aiogram.md
-
-  - 🧪 Тестирование:
-      - 25-pytest/index.md
-
-  - ⚡ Асинхронность:
-      - 26-asyncio/index.md
-      - Основы: 26-asyncio/basics.md
-
-  - 🛠️ Утилиты:
-      - 27-utilities/index.md
-
-  - 🧠 Алгоритмы:
-      - 28-algorithms/index.md
-      - Сложность: 28-algorithms/complexity.md
-      - Сортировка и поиск: 28-algorithms/sorting-searching.md
-      - Структуры данных: 28-algorithms/data-structures.md
-
-  - 🤖 Продвинутое ML:
-      - 29-ml-advanced/index.md
-      - Нейросети с нуля: 29-ml-advanced/neural-networks.md
-      - PyTorch: 29-ml-advanced/pytorch.md
-      - TensorFlow / Keras: 29-ml-advanced/tensorflow.md
-
-  - 🕷️ Скрапинг-продакшн:
-      - 30-scraping-pro/index.md
-      - Этика и закон: 30-scraping-pro/ethics.md
-      - Продакшн: 30-scraping-pro/production.md
-
-  - ⚙️ DevOps:
-      - 31-devops/index.md
-      - Docker: 31-devops/docker.md
-      - GitHub Actions: 31-devops/github-actions.md
-      - Деплой: 31-devops/deploy.md
-
-  - 🎮 Игровая разработка:
-      - 32-gamedev/index.md
-      - Ursina и Panda3D: 32-gamedev/engines.md
-
-  - 🔄 Работа с данными (ETL):
-      - 33-etl/index.md
-      - Пайплайны: 33-etl/pipelines.md
-
-  - 🔒 Криптография и безопасность:
-      - 34-security/index.md
-      - Основы криптографии: 34-security/crypto.md
-      - Безопасная разработка: 34-security/secure-coding.md
-
-  - 🚶 Проекты по шагам:
-      - 35-step-projects/index.md
-      - Telegram-бот викторины: 35-step-projects/telegram-quiz.md
-      - Погодный CLI: 35-step-projects/weather-cli.md
-      - Дневник на Flask: 35-step-projects/flask-diary.md
-
-  - 🌿 Git:
-      - 36-git/index.md
-      - Основы: 36-git/basics.md
-      - Ветки и слияние: 36-git/branches.md
-      - GitHub: 36-git/github.md
-      - Продвинутое: 36-git/advanced.md
-
-  - 🐧 Linux:
-      - 37-linux/index.md
-      - Основы терминала: 37-linux/terminal.md
-      - Практика: 37-linux/practice.md
-
-  - 🎓 ЕГЭ и олимпиады:
-      - 38-exams/index.md
-      - ЕГЭ: 38-exams/ege.md
-      - Олимпиады: 38-exams/olympiads.md
-
-  - 💼 Карьера в IT:
-      - 39-career/index.md
-      - Профессии: 39-career/roles.md
-      - Интервью: 39-career/interviews.md
-
-  - 🚀 Что дальше:
-      - 40-whats-next/index.md
+  - 🎓 Подготовка:
+      - 🌿 Git:
+          - 36-git/index.md
+          - Основы: 36-git/basics.md
+          - Ветки и слияние: 36-git/branches.md
+          - GitHub: 36-git/github.md
+          - Продвинутое: 36-git/advanced.md
+      - 🐧 Linux:
+          - 37-linux/index.md
+          - Основы терминала: 37-linux/terminal.md
+          - Практика: 37-linux/practice.md
+      - 🎓 ЕГЭ и олимпиады:
+          - 38-exams/index.md
+          - ЕГЭ: 38-exams/ege.md
+          - Олимпиады: 38-exams/olympiads.md
+      - 💼 Карьера в IT:
+          - 39-career/index.md
+          - Профессии: 39-career/roles.md
+          - Интервью: 39-career/interviews.md
+      - 🚀 Что дальше:
+          - 40-whats-next/index.md
 
   - 🎯 Проекты:
-      - 14-projects/index.md
-      - Для начинающих: 14-projects/beginner.md
-      - Средний уровень: 14-projects/intermediate.md
-      - Продвинутый уровень: 14-projects/advanced.md
+      - Идеи:
+          - 14-projects/index.md
+          - Для начинающих: 14-projects/beginner.md
+          - Средний уровень: 14-projects/intermediate.md
+          - Продвинутый уровень: 14-projects/advanced.md
+      - Пошаговые проекты:
+          - 35-step-projects/index.md
+          - Telegram-бот викторины: 35-step-projects/telegram-quiz.md
+          - Погодный CLI: 35-step-projects/weather-cli.md
+          - Дневник на Flask: 35-step-projects/flask-diary.md
