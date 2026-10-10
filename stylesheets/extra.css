@@ -1,0 +1,10 @@
+.md-content__inner { padding-bottom: 3rem; }
+.md-typeset pre > code { font-size: .82rem; line-height: 1.55; }
+
+/* «Просто» — тёплый жёлтый */
+.md-typeset .admonition.example { border-color: #ffb300; }
+.md-typeset .admonition.example > .admonition-title { background-color: rgba(255,179,0,.1); }
+
+/* «Подробнее» — фиолетовый */
+.md-typeset .admonition.info { border-color: #7c4dff; }
+.md-typeset .admonition.info > .admonition-title { background-color: rgba(124,77,255,.1); }
