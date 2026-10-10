@@ -247,6 +247,25 @@ nav:
       - GitHub Actions: 31-devops/github-actions.md
       - Деплой: 31-devops/deploy.md
 
+  - 🎮 Игровая разработка:
+      - 32-gamedev/index.md
+      - Ursina и Panda3D: 32-gamedev/engines.md
+
+  - 🔄 Работа с данными (ETL):
+      - 33-etl/index.md
+      - Пайплайны: 33-etl/pipelines.md
+
+  - 🔒 Криптография и безопасность:
+      - 34-security/index.md
+      - Основы криптографии: 34-security/crypto.md
+      - Безопасная разработка: 34-security/secure-coding.md
+
+  - 🚶 Проекты по шагам:
+      - 35-step-projects/index.md
+      - Telegram-бот викторины: 35-step-projects/telegram-quiz.md
+      - Погодный CLI: 35-step-projects/weather-cli.md
+      - Дневник на Flask: 35-step-projects/flask-diary.md
+
   - 🎯 Проекты:
       - 14-projects/index.md
       - Для начинающих: 14-projects/beginner.md
