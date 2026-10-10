@@ -27,7 +27,7 @@
     
     
       
-        <title>index - Питон-Планета</title>
+        <title>ООП — объектно-ориентированное программирование - Питон-Планета</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#index" class="md-skip">
+        <a href="#-" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              index
+              ООП — объектно-ориентированное программирование
             
           </span>
         </div>
@@ -3731,6 +3731,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Что в разделе
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Что вы сможете после раздела
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Что дальше
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3749,11 +3790,56 @@
   
 
 
-<h1 id="index">index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Страница в разработке</p>
-<p>Скоро здесь появится материал.</p>
+<h1 id="-">ООП — объектно-ориентированное программирование<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
+<p>До сих пор мы работали с <strong>функциями</strong> и <strong>данными отдельно</strong>. ООП предлагает другой взгляд: собрать данные и действия над ними в <strong>один объект</strong>. Это способ думать о программе как о мире, где живут <strong>объекты</strong> с их <strong>свойствами</strong> и <strong>поведением</strong>.</p>
+<p>Классический пример: в игре есть персонажи. У каждого — имя, HP, инвентарь (<strong>данные</strong>), и каждый умеет атаковать, лечиться, двигаться (<strong>методы</strong>). Класс <code>Character</code> описывает, <strong>какими бывают</strong> персонажи, а объекты — <strong>конкретные</strong> персонажи.</p>
+<p>В этом разделе — классы, объекты, наследование, полиморфизм и все магические методы.</p>
+<div class="admonition tip">
+<p class="admonition-title">Как учиться</p>
+<p>Начните с <code>classes.md</code> — что такое класс, объект, <code>self</code>. Когда поймёте
+базовое — переходите к наследованию. Магические методы — уже для
+продвинутого уровня, но именно они делают Python-код «питоническим».</p>
 </div>
+<hr />
+<h2 id="_1">📚 Что в разделе<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Что узнаете</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="classes/">Классы и объекты</a></td>
+<td><code>class</code>, <code>self</code>, атрибуты, методы, <code>@property</code>, <code>@dataclass</code></td>
+</tr>
+<tr>
+<td><a href="inheritance/">Наследование</a></td>
+<td><code>super()</code>, MRO, <code>ABC</code>, <code>@abstractmethod</code>, <code>mixin</code></td>
+</tr>
+<tr>
+<td><a href="polymorphism/">Полиморфизм</a></td>
+<td>«Один интерфейс — много реализаций», duck typing</td>
+</tr>
+<tr>
+<td><a href="magic-methods/">Магические методы</a></td>
+<td><strong>Все ~80</strong> <code>__dunder__</code>-методов с примерами</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">🎯 Что вы сможете после раздела<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Писать свои классы с атрибутами и методами</li>
+<li>Понимать, что такое <code>self</code> и зачем он нужен</li>
+<li>Использовать наследование и <code>super()</code></li>
+<li>Переопределять поведение объектов через магические методы</li>
+<li>Различать «хорошие» и «плохие» архитектуры классов</li>
+</ul>
+<hr />
+<h2 id="_3">🔗 Что дальше<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>→ <a href="classes/">Классы и объекты</a> — начнём с базового.</p>
 
 
 
@@ -3774,7 +3860,7 @@
     <span class="md-icon" title="Последнее обновление">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="10 октября 2026 г. 10:48:30 UTC">10 октября 2026 г.</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="10 октября 2026 г. 11:28:49 UTC">10 октября 2026 г.</span>
   </span>
 
     

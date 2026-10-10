@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install" class="md-skip">
+        <a href="#pyqt5" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -2873,6 +2873,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Установка
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2889,6 +2907,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Установка
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Возможные проблемы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Что устанавливается
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Что дальше
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3726,6 +3807,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Установка
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Возможные проблемы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Что устанавливается
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Что дальше
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3744,11 +3877,56 @@
   
 
 
-<h1 id="install">install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Страница в разработке</p>
-<p>Скоро здесь появится материал.</p>
+<h1 id="pyqt5">Установка PyQt5<a class="headerlink" href="#pyqt5" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Уровень: ⭐</p>
 </div>
+<hr />
+<h2 id="_1">🚀 Установка<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>В терминале VS Code (в активированном venv, если он есть):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>PyQt5
+</code></pre></div>
+<p>Проверка:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">QApplication</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"PyQt5 работает!"</span><span class="p">)</span>
+</code></pre></div>
+<p>Если не выдало ошибок — установлено.</p>
+<hr />
+<h2 id="_2">⚠️ Возможные проблемы<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title"><strong>Linux</strong>: нет системных библиотек</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ImportError: libEGL.so.1: cannot open shared object file
+</code></pre></div>
+Поставьте системные библиотеки:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-pyqt5<span class="w"> </span>libegl1
+</code></pre></div></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title"><strong>macOS</strong>: диалог «Python.app»</p>
+<p>Иногда нужен <code>pip install pyqt5 --no-binary :all:</code>. Обычно работает
+и обычная установка.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title"><strong>Windows</strong>: медленная установка</p>
+<p>PyQt5 довольно большой (~50 МБ). Первый <code>pip install</code> может занять
+пару минут — это нормально.</p>
+</div>
+<hr />
+<h2 id="_3">📌 Что устанавливается<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>PyQt5</code> — основные модули: <code>QtWidgets</code>, <code>QtCore</code>, <code>QtGui</code></li>
+<li><code>PyQt5.QtWidgets</code> — виджеты (кнопки, окна, таблицы)</li>
+<li><code>PyQt5.QtCore</code> — ядро (сигналы, таймеры, типы)</li>
+<li><code>PyQt5.QtGui</code> — графика (шрифты, цвета, иконки)</li>
+</ul>
+<p>Проверить версию:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt5.QtCore</span><span class="w"> </span><span class="kn">import</span> <span class="n">QT_VERSION_STR</span><span class="p">,</span> <span class="n">PYQT_VERSION_STR</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Qt:"</span><span class="p">,</span> <span class="n">QT_VERSION_STR</span><span class="p">)</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"PyQt:"</span><span class="p">,</span> <span class="n">PYQT_VERSION_STR</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="_4">🔗 Что дальше<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>→ <a href="../first-window/">Первое окно</a>.</p>
 
 
 
@@ -3769,7 +3947,7 @@
     <span class="md-icon" title="Последнее обновление">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="10 октября 2026 г. 10:48:30 UTC">10 октября 2026 г.</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="10 октября 2026 г. 11:28:49 UTC">10 октября 2026 г.</span>
   </span>
 
     
