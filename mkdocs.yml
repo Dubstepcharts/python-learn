@@ -191,6 +191,39 @@ nav:
       - BeautifulSoup: 19-requests/beautifulsoup.md
       - Selenium: 19-requests/selenium.md
 
+  - 🗄️ Базы данных:
+      - 20-databases/index.md
+      - Основы SQL: 20-databases/sql-basics.md
+      - SQLite: 20-databases/sqlite.md
+      - SQLAlchemy: 20-databases/sqlalchemy.md
+      - PostgreSQL: 20-databases/postgresql.md
+      - MongoDB: 20-databases/mongodb.md
+
+  - 🪟 tkinter:
+      - 21-tkinter/index.md
+      - Виджеты и приложение: 21-tkinter/widgets.md
+
+  - 🎮 pygame:
+      - 22-pygame/index.md
+      - Основы: 22-pygame/basics.md
+
+  - 🖼️ Pillow:
+      - 23-pillow/index.md
+
+  - 🤖 Telegram-боты:
+      - 24-telegram/index.md
+      - aiogram: 24-telegram/aiogram.md
+
+  - 🧪 Тестирование:
+      - 25-pytest/index.md
+
+  - ⚡ Асинхронность:
+      - 26-asyncio/index.md
+      - Основы: 26-asyncio/basics.md
+
+  - 🛠️ Утилиты:
+      - 27-utilities/index.md
+      
   - 🎯 Проекты:
       - 14-projects/index.md
       - Для начинающих: 14-projects/beginner.md
