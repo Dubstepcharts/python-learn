@@ -40,6 +40,45 @@ hide:
 
 ---
 
+## ⭐ Популярное у новичков
+
+<div class="grid cards popular" markdown>
+
+-   :material-download:{ .lg .middle } **Установка Python**
+
+    ---
+
+    Как поставить Python и запустить первую программу.
+
+    [:octicons-arrow-right-24: Открыть](00-start/install.md)
+
+-   :material-numeric-1-circle:{ .lg .middle } **Основы Python**
+
+    ---
+
+    Переменные, типы, операторы, ввод и вывод.
+
+    [:octicons-arrow-right-24: Открыть](01-basics/index.md)
+
+-   :material-code-braces:{ .lg .middle } **Списки и словари**
+
+    ---
+
+    Главные коллекции Python — нужны везде.
+
+    [:octicons-arrow-right-24: Открыть](04-collections/index.md)
+
+-   :material-bug:{ .lg .middle } **Частые ошибки**
+
+    ---
+
+    Справочник 30+ ошибок с примерами и решениями.
+
+    [:octicons-arrow-right-24: Открыть](41-errors/index.md)
+
+</div>
+
+
 ## 📊 Что внутри
 
 <div class="grid cards" markdown>
