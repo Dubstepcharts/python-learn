@@ -303,5 +303,6 @@ nav:
       - Пошаговые проекты:
           - 35-step-projects/index.md
           - Telegram-бот викторины: 35-step-projects/telegram-quiz.md
+          - Викторина на SQLite: 35-step-projects/sqlite-quiz.md
           - Погодный CLI: 35-step-projects/weather-cli.md
           - Дневник на Flask: 35-step-projects/flask-diary.md
