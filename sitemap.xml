@@ -2,654 +2,658 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/00-start/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/00-start/first-program/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/00-start/ide/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/00-start/install/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/01-basics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/01-basics/comments/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/01-basics/data-types/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/01-basics/input-output/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/01-basics/operators/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/01-basics/variables/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/02-control-flow/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/02-control-flow/break-continue/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/02-control-flow/for/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/02-control-flow/if-else/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/02-control-flow/while/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/03-strings/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/03-strings/formatting/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/03-strings/methods/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/03-strings/slicing/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/04-collections/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/04-collections/comprehensions/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/04-collections/dicts/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/04-collections/lists/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/04-collections/sets/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/04-collections/tuples/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/05-functions/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/05-functions/arguments/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/05-functions/decorators/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/05-functions/definition/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/05-functions/lambda/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/05-functions/return/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/05-functions/scope/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/06-files-errors/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/06-files-errors/exceptions/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/06-files-errors/files/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/07-modules/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/07-modules/custom-modules/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/07-modules/import/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/07-modules/pip/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/08-oop/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/08-oop/classes/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/08-oop/inheritance/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/08-oop/magic-methods/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/08-oop/polymorphism/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/09-stdlib/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/09-stdlib/builtins/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/09-stdlib/datetime/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/09-stdlib/json/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/09-stdlib/math-random/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/09-stdlib/os-sys/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/10-turtle/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/10-turtle/basics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/10-turtle/colors/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/10-turtle/loops-in-turtle/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/10-turtle/projects/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/10-turtle/shapes/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/11-pyqt5/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/11-pyqt5/calculator-project/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/11-pyqt5/first-window/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/11-pyqt5/install/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/11-pyqt5/layouts/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/11-pyqt5/signals-slots/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/11-pyqt5/widgets/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/12-pandas/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/12-pandas/filtering/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/12-pandas/groupby/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/12-pandas/install/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/12-pandas/plots/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/12-pandas/read-write/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/12-pandas/series-dataframe/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/13-kivy/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/13-kivy/first-app/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/13-kivy/install/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/13-kivy/kv-language/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/13-kivy/packaging/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/13-kivy/widgets/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/14-projects/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/14-projects/advanced/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/14-projects/beginner/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/14-projects/intermediate/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/15-web/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/15-web/django/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/15-web/fastapi/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/15-web/flask/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/16-numpy/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/16-numpy/basics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/16-numpy/operations/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/17-matplotlib/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/17-matplotlib/basics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/17-matplotlib/charts/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/17-matplotlib/seaborn/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/18-sklearn/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/18-sklearn/algorithms/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/18-sklearn/basics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/19-requests/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/19-requests/beautifulsoup/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/19-requests/requests/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/19-requests/selenium/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/20-databases/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/20-databases/mongodb/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/20-databases/postgresql/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/20-databases/sql-basics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/20-databases/sqlalchemy/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/20-databases/sqlite/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/21-tkinter/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/21-tkinter/widgets/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/22-pygame/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/22-pygame/basics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/23-pillow/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/24-telegram/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/24-telegram/aiogram/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/25-pytest/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/26-asyncio/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/26-asyncio/basics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/27-utilities/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/28-algorithms/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/28-algorithms/complexity/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/28-algorithms/data-structures/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/28-algorithms/sorting-searching/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/29-ml-advanced/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/29-ml-advanced/neural-networks/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/29-ml-advanced/pytorch/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/29-ml-advanced/tensorflow/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/30-scraping-pro/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/30-scraping-pro/ethics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/30-scraping-pro/production/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/31-devops/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/31-devops/deploy/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/31-devops/docker/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/31-devops/github-actions/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/32-gamedev/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/32-gamedev/engines/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/33-etl/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/33-etl/pipelines/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/34-security/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/34-security/crypto/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/34-security/secure-coding/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/35-step-projects/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/35-step-projects/flask-diary/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://Dubstepcharts.github.io/python-learn/35-step-projects/sqlite-quiz/</loc>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/35-step-projects/telegram-quiz/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/35-step-projects/weather-cli/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/36-git/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/36-git/advanced/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/36-git/basics/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/36-git/branches/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/36-git/github/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/37-linux/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/37-linux/practice/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/37-linux/terminal/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/38-exams/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/38-exams/ege/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/38-exams/olympiads/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/39-career/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/39-career/interviews/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/39-career/roles/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/40-whats-next/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/41-errors/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/41-errors/environment/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/41-errors/git-mkdocs/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/41-errors/import/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/41-errors/runtime/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://Dubstepcharts.github.io/python-learn/41-errors/syntax/</loc>
-         <lastmod>2026-10-10</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
 </urlset>
