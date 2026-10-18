@@ -70,7 +70,7 @@ plugins:
   - git-revision-date-localized:
       type: date
       locale: ru
- - mkdocs-pyscript
+  - mkdocs-pyscript
 
 extra_css:
   - stylesheets/extra.css
@@ -83,6 +83,12 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Dubstepcharts
       name: GitHub
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/ВАШ_КАНАЛ
+      name: Telegram
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@ВАШ_КАНАЛ
+      name: YouTube
     - icon: fontawesome/solid/globe
       link: https://Dubstepcharts.github.io/python-learn/
       name: Сайт
@@ -295,6 +301,9 @@ nav:
       - Окружение: 41-errors/environment.md
       - Git и MkDocs: 41-errors/git-mkdocs.md
 
+  - 🏋️ Практика:
+      - 42-practice/index.md
+
   - 🎯 Проекты:
       - Идеи:
           - 14-projects/index.md
@@ -307,5 +316,3 @@ nav:
           - Викторина на SQLite: 35-step-projects/sqlite-quiz.md
           - Погодный CLI: 35-step-projects/weather-cli.md
           - Дневник на Flask: 35-step-projects/flask-diary.md
-  - 🏋️ Практика:
-      - 42-practice/index.md
