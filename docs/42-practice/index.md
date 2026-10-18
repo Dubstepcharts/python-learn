@@ -1,6 +1,6 @@
 # Практика: Переменные и Операторы
 
-Здесь вы можете проверить свои знания. Нажмите **LOAD** на блоке с кодом, чтобы начать писать, и **Run** (или Shift+Enter), чтобы выполнить программу.
+Здесь вы можете проверить свои знания. Скопируйте код задачи, нажмите кнопку **«Открыть в песочнице»**, вставьте код и запустите его. А если застрянете — загляните в раскрывающееся решение.
 
 ---
 
@@ -12,6 +12,8 @@
 ```python
 # Напишите ваш код ниже
 ```
+
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
 
 ??? success "Посмотреть решение и ответ"
     **Решение:**
@@ -32,21 +34,14 @@ b = 10
 # Напишите ваш код ниже
 ```
 
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
+
 ??? success "Посмотреть решение и ответ"
     **Решение (Python-стиль):**
     ```python
     a = 5
     b = 10
     a, b = b, a
-    print(a, b)
-    ```
-    **Решение (классическое):**
-    ```python
-    a = 5
-    b = 10
-    temp = a
-    a = b
-    b = temp
     print(a, b)
     ```
     **Ответ:** `10 5`
@@ -59,6 +54,8 @@ b = 10
 ```python
 # Напишите ваш код ниже
 ```
+
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
 
 ??? success "Посмотреть решение и ответ"
     **Решение:**
@@ -85,6 +82,8 @@ y = 5
 # Напишите ваш код ниже
 ```
 
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
+
 ??? success "Посмотреть решение и ответ"
     **Решение:**
     ```python
@@ -108,6 +107,8 @@ b = 4
 # Напишите ваш код ниже
 ```
 
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
+
 ??? success "Посмотреть решение и ответ"
     **Решение:**
     ```python
@@ -127,6 +128,8 @@ b = 4
 # Напишите ваш код ниже
 ```
 
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
+
 ??? success "Посмотреть решение и ответ"
     **Решение:**
     ```python
@@ -144,6 +147,8 @@ b = 4
 print(2 + 3 * 4)
 ```
 
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
+
 ??? success "Посмотреть решение и ответ"
     **Ответ:** `14`. Сначала выполняется умножение (`3 * 4 = 12`), затем сложение (`2 + 12`).
 
@@ -159,6 +164,8 @@ a = 7
 b = 7
 # Напишите ваш код ниже
 ```
+
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
 
 ??? success "Посмотреть решение и ответ"
     **Решение:**
@@ -180,6 +187,8 @@ y = 3
 # Напишите ваш код ниже
 ```
 
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
+
 ??? success "Посмотреть решение и ответ"
     **Решение:**
     ```python
@@ -199,6 +208,8 @@ s1 = "apple"
 s2 = "orange"
 # Напишите ваш код ниже
 ```
+
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
 
 ??? success "Посмотреть решение и ответ"
     **Решение:**
@@ -220,6 +231,8 @@ has_pass = True
 # Напишите ваш код ниже
 ```
 
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
+
 ??? success "Посмотреть решение и ответ"
     **Решение:**
     ```python
@@ -239,6 +252,8 @@ a = 5
 b = 0
 # Напишите ваш код ниже
 ```
+
+[:octicons-play-16: Открыть в песочнице](https://www.programiz.com/python-programming/online-compiler/){ .md-button target="_blank" }
 
 ??? success "Посмотреть решение и ответ"
     **Решение:**

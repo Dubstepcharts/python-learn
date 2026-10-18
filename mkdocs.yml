@@ -70,8 +70,6 @@ plugins:
   - git-revision-date-localized:
       type: date
       locale: ru
-  - mkdocs-pyscript:
-      pyscript_version: "releases/2024.4.2"
 
 extra_css:
   - stylesheets/extra.css
