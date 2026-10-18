@@ -70,6 +70,7 @@ plugins:
   - git-revision-date-localized:
       type: date
       locale: ru
+ - mkdocs-pyscript
 
 extra_css:
   - stylesheets/extra.css
@@ -306,3 +307,5 @@ nav:
           - Викторина на SQLite: 35-step-projects/sqlite-quiz.md
           - Погодный CLI: 35-step-projects/weather-cli.md
           - Дневник на Flask: 35-step-projects/flask-diary.md
+  - 🏋️ Практика:
+      - 42-practice/index.md
